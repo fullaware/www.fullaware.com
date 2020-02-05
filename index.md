@@ -1,1 +1,1 @@
-`Profound wisdom coming soon`
+> Profound wisdom coming `soon`
