@@ -1,4 +1,0 @@
-Sitemap: http://www.fullaware.com/sitemapindex.xml
-
-User-Agent: *
-Host: www.fullaware.com
