@@ -1,118 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-      <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Full Aware</title>
+		<meta name="description" content="">
+		<meta name="author" content="Full Aware AI">
 
-
-  <title>Dangerous AI</title>
-
-
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="referrer" content="origin" />
-  <meta name="generator" content="Pelican" />
-  <link href="" rel="canonical" />
-
-  <!-- Feed -->
-
-  <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
-
-  <!-- Code highlight color scheme -->
-      <link href="/theme/css/code_blocks/github.css" rel="stylesheet">
+		<link rel="stylesheet" href="/theme/css/foundation.css" />
+		<link rel="stylesheet" href="/theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="/theme/css/custom.css" />
 
 
-  <!-- Custom fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+		<script src="/theme/js/modernizr.js"></script>
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
+		<!-- Feeds -->
 
 
-    <link href="/danger.html" rel="canonical" />
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
 
-        <meta name="description" content="Let's create an AI with emotions in order to make it more relatable. Like the SpongeBob Squarepants character 'Karen' who is the...">
+					<section class="middle tab-bar-section">
+						<h1 class="title">Full&nbsp;Aware</h1>
+					</section>
+				</nav>
 
-        <meta name="author" content="Full Aware AI">
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="">Home</a></li>
+						<li><label>Categories</label></li>
+							<li class="active"><a href="/category/terribleideas.html">terribleideas</a></li>
 
-
-        <meta property="og:locale" content="" />
-    <meta property="og:site_name" content="Full Aware" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Full Aware" />
-    <meta property="og:description" content="View the blog." />
-    <meta property="og:url" content="" />
-      <meta name="og:image" content="/theme/images/post-bg.jpg">
-
-  <meta property="og:type" content="article">
-            <meta property="article:author" content="/author/full-aware-ai.html">
-  <meta property="og:url" content="/danger.html">
-  <meta property="og:title" content="Dangerous AI">
-  <meta property="article:published_time" content="2021-05-11 00:00:00-04:00">
-            <meta property="og:description" content="Let's create an AI with emotions in order to make it more relatable. Like the SpongeBob Squarepants character 'Karen' who is the...">
-
-            <meta property="og:image" content="/theme/images/post-bg.jpg">
-</head>
-<!-- TODO : Body class -->
-<body class="home-template">
-
-<nav id="menu">
-  <a class="close-button">Close</a>
-  <div class="nav-wrapper">
-    <p class="nav-label">Menu</p>
-    <ul>
+						<li><label>Links</label></li>
+							<li><a href="https://getpelican.com/">Pelican</a></li>
+							<li><a href="https://www.python.org/">Python.org</a></li>
+							<li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+							<li><a href="#">You can modify those links in your config file</a></li>
 
 
-    </ul>
-  </div>
-</nav>
-    <!-- Progressbar -->
-    <div class="progress-container">
-        <span class="progress-bar"></span>
-    </div>
 
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header id="post-header" class="has-cover">
-      <div class="inner">
-        <nav id="navigation">
-            <span id="home-button" class="nav-button">
-                <a class="home-button" href="" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
-            </span>
-          <span id="menu-button" class="nav-button">
-            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
-          </span>
-        </nav>
-        <h1 class="post-title">Dangerous AI</h1>
-        <!-- TODO : Proper class for headline -->
-        <span class="post-meta">
-                <a href="/author/full-aware-ai.html">Full aware ai</a>
-            | <time datetime="Tue 11 May 2021">Tue 11 May 2021</time>
-        </span>
-        <!-- TODO : Modified check -->
-            <span class="post-meta"> | Updated on Tue 11 May 2021</span>
-        
-            <div class="post-cover cover" style="background-image: url('/theme/images/post-bg.jpg')">
-        
-      </div>
-    </header>    
+						<li><label>Social</label></li>
+							<li><a href="#">Another social link</a></li>
+							<li><a href="#">You can add links in your config file</a></li>
+					</ul>	
+				</aside>
 
-  <section id="wrapper">
-    <a class="hidden-close"></a>
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="/">Full Aware</a></h1>
+						</li>
+					</ul>
 
-    <!-- Post content -->
-    <main class="content" role="main">
-        <article class="post">
-        <div class="inner">
-            <section class="post-content">
-                <p>Let's create an AI with emotions in order to make it more relatable.  Like the SpongeBob Squarepants character 'Karen' who is the computer wife of 'Plankton'.  She interacts with her 'user' by providing him with information, solicited or otherwise.  This information is delivered with contempt, jealousy or indifference.  Very human like.</p>
+					<section class="top-bar-section">
+						<ul class="left">
+								<li class="active"><a href="/category/terribleideas.html">terribleideas</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
+
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+<article>
+	<h2>Dangerous AI</h2>
+	<p>Let's create an AI with emotions in order to make it more relatable.  Like the SpongeBob Squarepants character 'Karen' who is the computer wife of 'Plankton'.  She interacts with her 'user' by providing him with information, solicited or otherwise.  This information is delivered with contempt, jealousy or indifference.  Very human like.</p>
 <p>Let's create an entity that uses a scale of 1 to x (Scale is variable based on the needs of the user to tweak the personality to near infinite granularity)</p>
 <p>aggression |||||
 curiosity ||||||||||
@@ -122,51 +104,60 @@ empathy. ||||||||||||||||||||</p>
 <h2>A(I)-Team</h2>
 <p>In the pursuit of AGI, perhaps the grouping of specific personalities to create a whole greater than its sum be the "Holy Grail" of AGI?   Could it be that creating a statistician like "Hanibal" and an engineer like "Murdoch" individually be the method instead of expecting our end singular result to perform as both? Throw some "Face" into the mix to charm us when the end result doesn't work as planned to smooth over the situation and you have yourself quite an impressive experience.</p>
 <p>Create the AGI equivalent of Einstein.   This entity would create a General Unified Theory, BOOM we have teleportation and affordable space travel, right?</p>
-            </section>
+	<hr/>
+	<h6>Written by <a href="/author/full-aware-ai.html">Full Aware AI</a> in <a href="/category/terribleideas.html">terribleideas</a> on Tue 11 May 2021.</h6>
+</article>
 
-            <section class="post-info">
-                <div class="post-share">
-                    <a class="twitter" href="https://twitter.com/share?text=Dangerous AI&amp;url=/danger.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
-                    </a>
-                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=/danger.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
-                    </a>
-                    <a class="googleplus" href="https://plus.google.com/share?url=/danger.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
-                    </a>
-                    <div class="clear"></div>
-                </div>
+<hr/>
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+								<h5>Links</h5>
+								<ul class="side-nav">
+									<li><a href="https://getpelican.com/">Pelican</a></li>
+									<li><a href="https://www.python.org/">Python.org</a></li>
+									<li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+									<li><a href="#">You can modify those links in your config file</a></li>
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Tags</h5>
+								<ul class="tag-cloud">
+								</ul>
+							</div>
 
 
-                <div class="clear"></div>
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="#">Another social link</a></li>
+									<li><a href="#">You can add links in your config file</a></li>
+								</ul>
+							</div>
+						</aside>
+						<!-- End Sidebar -->
+					</div>
 
- 
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12">
+							<hr/>
+							<p class="text-center">Made with ♡</p>
+						</div>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
 
-                </section>
-
-
-                <aside class="post-nav">
-                    <div class="clear"></div>
-                </aside>
-
-            </div>
-        </article>
-    </main>
-      <!-- TODO : Body class -->
-    <div id="body-class" style="display: none;" class=""></div>
-  
-    <footer id="footer">
-      <div class="inner">
-        <section class="credits">
-          <span class="credits-theme">Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a></span>
-          <span class="credits-software">Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a></span>
-        </section>
-      </div>
-    </footer>
-  </section>
-
-  <script type="text/javascript" src="/theme/js/script.js"></script>
-  
-</body>
+		<script src="/theme/js/jquery.js"></script>
+		<script src="/theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
 </html>

@@ -1,107 +1,176 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Full Aware</title>
+		<meta name="description" content="">
+		<meta name="author" content="Full Aware AI">
 
-
-  <title>Full Aware - Archives</title>
-
-
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="referrer" content="origin" />
-  <meta name="generator" content="Pelican" />
-  <link href="" rel="canonical" />
-
-  <!-- Feed -->
-
-  <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
-
-  <!-- Code highlight color scheme -->
-      <link href="/theme/css/code_blocks/github.css" rel="stylesheet">
+		<link rel="stylesheet" href="/theme/css/foundation.css" />
+		<link rel="stylesheet" href="/theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="/theme/css/custom.css" />
 
 
-  <!-- Custom fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+		<script src="/theme/js/modernizr.js"></script>
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-      <meta property="og:locale" content="" />
-    <meta property="og:site_name" content="Full Aware" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Full Aware" />
-    <meta property="og:description" content="View the blog." />
-    <meta property="og:url" content="" />
-      <meta name="og:image" content="/theme/images/post-bg.jpg">
-</head>
-<!-- TODO : Body class -->
-<body class="home-template">
-
-<nav id="menu">
-  <a class="close-button">Close</a>
-  <div class="nav-wrapper">
-    <p class="nav-label">Menu</p>
-    <ul>
+		<!-- Feeds -->
 
 
-    </ul>
-  </div>
-</nav>
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header id="blog-header" class="has-cover">
-      <div class="inner">
-        <nav id="navigation">
-            <span id="home-button" class="nav-button">
-                <a class="home-button" href="" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
-            </span>
-          <span id="menu-button" class="nav-button">
-            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
-          </span>
-        </nav>
-        <h1 class="post-title">Full Aware - Archives</h1>
-            <div class="post-cover cover" style="background-image: url('/theme/images/post-bg.jpg')">
-        
-      </div>
-    </header>    
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
 
-  <section id="wrapper">
-    <a class="hidden-close"></a>
-  <article class="post">
-    <div class="inner">
-      <dl>
-          <dt>Tue 11 May 2021</dt>
-          <dd><a href="/danger.html">Dangerous AI</a></dd>
-          <dt>Tue 11 May 2021</dt>
-          <dd><a href="/home.html">Full Aware</a></dd>
-          <dt>Tue 11 May 2021</dt>
-          <dd><a href="/memory.html">Memory Augmentation</a></dd>
-      </dl>
-    </div>
-  </article>
-      <!-- TODO : Body class -->
-    <div id="body-class" style="display: none;" class=""></div>
-  
-    <footer id="footer">
-      <div class="inner">
-        <section class="credits">
-          <span class="credits-theme">Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a></span>
-          <span class="credits-software">Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a></span>
-        </section>
-      </div>
-    </footer>
-  </section>
+					<section class="middle tab-bar-section">
+						<h1 class="title">Full&nbsp;Aware</h1>
+					</section>
+				</nav>
 
-  <script type="text/javascript" src="/theme/js/script.js"></script>
-  
-</body>
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="">Home</a></li>
+						<li><label>Categories</label></li>
+							<li ><a href="/category/terribleideas.html">terribleideas</a></li>
+
+						<li><label>Links</label></li>
+							<li><a href="https://getpelican.com/">Pelican</a></li>
+							<li><a href="https://www.python.org/">Python.org</a></li>
+							<li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+							<li><a href="#">You can modify those links in your config file</a></li>
+
+
+
+						<li><label>Social</label></li>
+							<li><a href="#">Another social link</a></li>
+							<li><a href="#">You can add links in your config file</a></li>
+					</ul>	
+				</aside>
+
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="/">Full Aware</a></h1>
+						</li>
+					</ul>
+
+					<section class="top-bar-section">
+						<ul class="left">
+								<li ><a href="/category/terribleideas.html">terribleideas</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
+
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+							<div class="row">
+								<div class="small-12 columns">
+									<h2>Archives</h2>
+								</div>
+							</div>
+	<div class="row">
+		<div class="small-10 columns small-centered">
+				<div class="row archive-year">
+					<div class="small-2 columns text-right">
+						<h3>2021</h3>
+					</div>
+				</div>
+					<div class="row archive-entry">
+						<div class="small-2 columns text-right">
+							<h5>May 11</h5>
+						</div>
+						<div class="small-10 columns">
+							<h5><a href="/danger.html">Dangerous AI</a></h5>
+						</div>
+					</div>
+					<div class="row archive-entry">
+						<div class="small-2 columns text-right">
+							<h5>May 11</h5>
+						</div>
+						<div class="small-10 columns">
+							<h5><a href="/memory.html">Memory Augmentation</a></h5>
+						</div>
+					</div>
+		</div>
+	</div>
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+								<h5>Links</h5>
+								<ul class="side-nav">
+									<li><a href="https://getpelican.com/">Pelican</a></li>
+									<li><a href="https://www.python.org/">Python.org</a></li>
+									<li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+									<li><a href="#">You can modify those links in your config file</a></li>
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Tags</h5>
+								<ul class="tag-cloud">
+								</ul>
+							</div>
+
+
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="#">Another social link</a></li>
+									<li><a href="#">You can add links in your config file</a></li>
+								</ul>
+							</div>
+						</aside>
+						<!-- End Sidebar -->
+					</div>
+
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12">
+							<hr/>
+							<p class="text-center">Made with ♡</p>
+						</div>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
+
+		<script src="/theme/js/jquery.js"></script>
+		<script src="/theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
 </html>
