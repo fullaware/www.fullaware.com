@@ -29,8 +29,10 @@
 <meta property="og:title" content="Homelab" />
 <meta name="twitter:title" content="Homelab" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.fullaware.com/posts/homelab/" /><meta property="og:description" content="" />
-<meta name="twitter:description" content="" /><meta property="og:image" content="https://www.fullaware.com/img/og.png" />
+<meta property="og:url" content="https://www.fullaware.com/posts/homelab/" /><meta property="og:description" content="Objective
+To have a single server with enough power to run nested vSphere 8 and Tanzu Kubernetes Grid with NSX.  But with vSphere 8 I wanted to make sure I had something on the HCL.  Dell PowerEdge R740 will carry the homelab moving forward." />
+<meta name="twitter:description" content="Objective
+To have a single server with enough power to run nested vSphere 8 and Tanzu Kubernetes Grid with NSX.  But with vSphere 8 I wanted to make sure I had something on the HCL.  Dell PowerEdge R740 will carry the homelab moving forward." /><meta property="og:image" content="https://www.fullaware.com/img/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://www.fullaware.com/img/og.png" /><meta property="article:published_time" content="2022-12-28T00:00:00+00:00" /><meta property="article:modified_time" content="2022-12-28T00:00:00+00:00" />
 
@@ -110,7 +112,9 @@
     </div>
     
     <div class="post-content markdown-body">
-        <h2 id="hardware">Hardware</h2>
+        <h2 id="objective">Objective</h2>
+<p>To have a single server with enough power to run nested vSphere 8 and Tanzu Kubernetes Grid with NSX.  But with vSphere 8 I wanted to make sure I had something on the <a href="https://www.vmware.com/resources/compatibility/detail.php?deviceCategory=server&amp;productid=42895" target="_blank">HCL</a>.  Dell PowerEdge R740 will carry the homelab moving forward.</p>
+<h2 id="hardware">Hardware</h2>
 <ul>
 <li>Dell PowerEdge R740
 <ul>
@@ -121,21 +125,22 @@
 <li>Broadcom 2x 10Gbe SFP / 2x 1Gbe Network Daughter Card (165T0)</li>
 <li>iDrac 9 Enterprise</li>
 <li>2x 750w Platinum Power Supplies</li>
+<li>SABRENT NVMe M.2 SSD to PCIe Riser <a href="https://www.amazon.com/gp/product/B084GDY2PW/" target="_blank"> https://www.amazon.com/gp/product/B084GDY2PW/</a></li>
+<li>WD_BLACK 2TB SN770 NVMe <a href="https://www.amazon.com/gp/product/B09QV5KJHV" target="_blank">https://www.amazon.com/gp/product/B09QV5KJHV</a></li>
 </ul>
 </li>
 <li>Dell PowerEdge R720
 <ul>
 <li>2 x Intel(R) Xeon(R) CPU E5-2640 6-Core</li>
 <li>128GB RAM - 16 x 8GB ECC PC3-12800 1333Mhz</li>
+<li>Replaced PERC 310 RAID Controller with LSI SAS 2008 flashed to IT mode.</li>
 <li>Replaced DVD with Samsung SSD 860 EVO 500GB, used as boot drive <a href="https://www.youtube.com/watch?v=Nx9-BK0WsxU" target="_blank">https://www.youtube.com/watch?v=Nx9-BK0WsxU</a></li>
-<li>SABRENT NVMe M.2 SSD to PCIe Riser <a href="https://www.amazon.com/gp/product/B084GDY2PW/" target="_blank"> https://www.amazon.com/gp/product/B084GDY2PW/</a></li>
-<li>WD_BLACK 2TB SN770 NVMe <a href="https://www.amazon.com/gp/product/B09QV5KJHV" target="_blank">https://www.amazon.com/gp/product/B09QV5KJHV</a></li>
 </ul>
 </li>
 </ul>
 <h2 id="software">Software</h2>
 <p><a href="https://www.vmug.com/membership/vmug-advantage-membership/" target="_blank">VMware vSphere 8</a> Licenses provided by VMUG Advantage membership</p>
-<h2 id="outline">Outline</h2>
+<h2 id="configuration">Configuration</h2>
 <ol>
 <li>Install ESXi 8 to 500GB SSD on R720.
 <ul>
@@ -149,7 +154,13 @@
 </ul>
 </li>
 <li>Install vCenter</li>
-<li><a href="https://www.truenas.com/docs/solutions/integrations/vmware/deploytninvmware/" target="_blank">Install TrueNAS Core</a> as a VM and add 150GB drive to be used as <a href="https://www.servethehome.com/building-a-lab-part-3-configuring-vmware-esxi-and-truenas-core/" target="_blank">iSCSI target</a></li>
+<li>Enable PCIPassthrough for SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon]</li>
+<li><a href="https://www.truenas.com/docs/solutions/integrations/vmware/deploytninvmware/" target="_blank">Install TrueNAS Core</a> as a VM
+<ul>
+<li>Add SAS2008 HBA to VM as additional PCI device</li>
+<li>Add drives to be used as <a href="https://www.servethehome.com/building-a-lab-part-3-configuring-vmware-esxi-and-truenas-core/" target="_blank">iSCSI target</a></li>
+</ul>
+</li>
 <li><a href="https://www.infotechram.com/index.php/2022/09/17/how-to-install-esxi-server-8-vsphere-8-as-nested-vm/" target="_blank">Install vSphere 8 as VM</a></li>
 <li>Provision 4 new Ubuntu Server 22.04 VMs for Kubernetes
 <ul>
