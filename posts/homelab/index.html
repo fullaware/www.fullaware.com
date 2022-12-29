@@ -110,17 +110,48 @@
     </div>
     
     <div class="post-content markdown-body">
-        <ul>
-<li>Dell R720
+        <h2 id="hardware">Hardware</h2>
 <ul>
-<li>2 x Xeon 2.5Ghz 6-Core (12 HyperThreaded)</li>
-<li>128GB RAM - 16 x 8GB 1333Mhz</li>
-<li>Replaced DVD with 512GB SSD, used as boot drive <a href="https://www.youtube.com/watch?v=Nx9-BK0WsxU" target="_blank">https://www.youtube.com/watch?v=Nx9-BK0WsxU</a></li>
+<li>Dell PowerEdge R740
+<ul>
+<li>2 x Intel Xeon Gold 6132 2.6Ghz 14-Core</li>
+<li>256GB RAM - 8 x 32GB 2400T DDR4 ECC</li>
+<li>H730p 2gb Cache Raid Controller PCIe</li>
+<li>2x 1TB SSD in Raid 1 (Samsung 850)</li>
+<li>Broadcom 2x 10Gbe SFP / 2x 1Gbe Network Daughter Card (165T0)</li>
+<li>iDrac 9 Enterprise</li>
+<li>2x 750w Platinum Power Supplies</li>
+</ul>
+</li>
+<li>Dell PowerEdge R720
+<ul>
+<li>2 x Intel(R) Xeon(R) CPU E5-2640 6-Core</li>
+<li>128GB RAM - 16 x 8GB ECC PC3-12800 1333Mhz</li>
+<li>Replaced DVD with Samsung SSD 860 EVO 500GB, used as boot drive <a href="https://www.youtube.com/watch?v=Nx9-BK0WsxU" target="_blank">https://www.youtube.com/watch?v=Nx9-BK0WsxU</a></li>
 <li>SABRENT NVMe M.2 SSD to PCIe Riser <a href="https://www.amazon.com/gp/product/B084GDY2PW/" target="_blank"> https://www.amazon.com/gp/product/B084GDY2PW/</a></li>
-<li>Samsung 980 Pro 1TB NVME <a href="https://www.amazon.com/gp/product/B08GLX7TNT/" target="_blank">https://www.amazon.com/gp/product/B08GLX7TNT/</a></li>
+<li>WD_BLACK 2TB SN770 NVMe <a href="https://www.amazon.com/gp/product/B09QV5KJHV" target="_blank">https://www.amazon.com/gp/product/B09QV5KJHV</a></li>
 </ul>
 </li>
 </ul>
+<h2 id="software">Software</h2>
+<p><a href="https://www.vmug.com/membership/vmug-advantage-membership/" target="_blank">VMware vSphere 8</a> Licenses provided by VMUG Advantage membership</p>
+<h2 id="outline">Outline</h2>
+<ol>
+<li>Install ESXi 8 to 500GB SSD on R720.
+<ul>
+<li>YES I received the warning regarding unsupported CPU.  This has yet to keep me from using vSphere 8 on this server.  I did have to get creative with storage since my LSI2008 or PERC 310 aren&rsquo;t supported.</li>
+<li>After installation I had 337.5GB for <code>Datastore1</code> which I renamed to <code>local_ssd500GB</code> and have so far managed to squeeze 8 VMs onto it thanks to thin provisioning.</li>
+</ul>
+</li>
+<li>Install pi-hole on Ubuntu 22.04 LTS VM
+<ul>
+<li><a href="https://www.youtube.com/watch?v=FnFtWsZ8IP0" target="_blank">Configure pi-hole</a> with <a href="https://docs.pi-hole.net/guides/dns/unbound/" target="_blank">recursive DNS</a> and add DNS entries for vCenter vm.</li>
+</ul>
+</li>
+<li>Install vCenter</li>
+<li><a href="https://www.truenas.com/docs/solutions/integrations/vmware/deploytninvmware/" target="_blank">Install TrueNAS Core</a> as a VM and add 150GB drive to be used as <a href="https://www.servethehome.com/building-a-lab-part-3-configuring-vmware-esxi-and-truenas-core/" target="_blank">iSCSI target</a></li>
+<li><a href="https://www.infotechram.com/index.php/2022/09/17/how-to-install-esxi-server-8-vsphere-8-as-nested-vm/" target="_blank">Install vSphere 8 as VM</a></li>
+</ol>
     </div>
 </article>
 
