@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Full Aware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.fullaware.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Dec 2022 07:57:08 -0500</lastBuildDate><atom:link href="https://www.fullaware.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pi-Hole Wildcard DNS</title>
+      <link>https://www.fullaware.com/posts/piholewildcarddns/</link>
+      <pubDate>Thu, 29 Dec 2022 07:57:08 -0500</pubDate>
+      
+      <guid>https://www.fullaware.com/posts/piholewildcarddns/</guid>
+      <description>&lt;p&gt;In order to access Kubernetes applications via my ingress &lt;a href=&#34;https://projectcontour.io&#34; target=&#34;_blank&#34;&gt;projectcontour.io&lt;/a&gt;, I&amp;rsquo;ll use a wildcard DNS entry.&lt;/p&gt;
+&lt;p&gt;Unfortunately this isn&amp;rsquo;t a simple entry in the web UI for Pi-hole (yet?).  A quick search and &lt;a href=&#34;https://brandonrozek.com/blog/wildcarddomainspihole/&#34; target=&#34;_blank&#34;&gt;Brandon Rozek&lt;/a&gt; had documented the steps to add a wildcard DNS entry in &lt;code&gt;dnsmasq&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Homelab</title>
       <link>https://www.fullaware.com/posts/homelab/</link>
