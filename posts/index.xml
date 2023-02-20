@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Full Aware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 31 Dec 2022 10:08:07 -0500</lastBuildDate><atom:link href="https://www.fullaware.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.fullaware.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tagging Asteroids with MongoDB and Python</title>
+      <link>https://www.fullaware.com/posts/mongodbtags/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fullaware.com/posts/mongodbtags/</guid>
+      <description>&lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;
+&lt;p&gt;Let&amp;rsquo;s use MongoDB and Python to build an asteroid tagging engine that allows us to assign multiple elements to any asteroid then query based on those elements.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Firefox: The WidevineCdm plugin has crashed</title>
       <link>https://www.fullaware.com/posts/firefoxwildvine/</link>
