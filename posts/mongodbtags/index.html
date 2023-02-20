@@ -16,7 +16,7 @@
 
 
 
-<title>Tagging Asteroids with MongoDB - Full Aware</title>
+<title>Tagging Asteroids with MongoDB and Python - Full Aware</title>
 
 
 <meta name="author" content="Full Aware" />
@@ -26,13 +26,13 @@
 <meta name="keywords" content="mongodb, python" />
 
 
-<meta property="og:title" content="Tagging Asteroids with MongoDB" />
-<meta name="twitter:title" content="Tagging Asteroids with MongoDB" />
+<meta property="og:title" content="Tagging Asteroids with MongoDB and Python" />
+<meta name="twitter:title" content="Tagging Asteroids with MongoDB and Python" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.fullaware.com/posts/mongodbtags/" /><meta property="og:description" content="Objective
-Let&rsquo;s use MongoDB to build an asteroid tagging engine that allows us to assign multiple elements to any asteroid then query based on those elements." />
+Let&rsquo;s use MongoDB and Python to build an asteroid tagging engine that allows us to assign multiple elements to any asteroid then query based on those elements." />
 <meta name="twitter:description" content="Objective
-Let&rsquo;s use MongoDB to build an asteroid tagging engine that allows us to assign multiple elements to any asteroid then query based on those elements." /><meta property="og:image" content="https://www.fullaware.com/img/og.png" />
+Let&rsquo;s use MongoDB and Python to build an asteroid tagging engine that allows us to assign multiple elements to any asteroid then query based on those elements." /><meta property="og:image" content="https://www.fullaware.com/img/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://www.fullaware.com/img/og.png" /><meta property="article:published_time" content="2023-02-15T00:00:00+00:00" /><meta property="article:modified_time" content="2023-02-15T00:00:00+00:00" />
 
@@ -100,7 +100,7 @@ Let&rsquo;s use MongoDB to build an asteroid tagging engine that allows us to as
 <article>
     
     <h2 class="post-item post-title">
-        <a href="https://www.fullaware.com/posts/mongodbtags/">Tagging Asteroids with MongoDB</a>
+        <a href="https://www.fullaware.com/posts/mongodbtags/">Tagging Asteroids with MongoDB and Python</a>
     </h2>
     <div class="post-item post-meta">
         <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-15</span>
@@ -112,13 +112,13 @@ Let&rsquo;s use MongoDB to build an asteroid tagging engine that allows us to as
     </div>
     
     <div class="post-content markdown-body">
-        <h2 id="objective">Objective</h2>
-<p>Let&rsquo;s use MongoDB to build an asteroid tagging engine that allows us to assign multiple elements to any asteroid then query based on those elements.</p>
-<h2 id="schema-design">Schema design</h2>
+        <h1 id="objective">Objective</h1>
+<p>Let&rsquo;s use MongoDB and Python to build an asteroid tagging engine that allows us to assign multiple elements to any asteroid then query based on those elements.</p>
+<h1 id="schema-design">Schema design</h1>
 <p><img class="img-zoomable" src="/posts/arrays.jpg" alt="Arrays" />
 </p>
 <p>Arrays allow you to assign an arbitrary number of elements to a document.  MongoDB allows you to insert, update and delete elements within arrays.</p>
-<p>Another requirement of our tagging engine is we want to be able to change the name of the tags without having to update each document with the new name.  For this we will be keeping the tag labels in a separate collection.</p>
+<p>A requirement of our tagging engine is we want to be able to change the name of the element without having to update each document with the new name.  For this we will be keeping the element labels in a separate collection and reference them by <code>_id</code> just as we would in a SQL database.  This works out great when we want to add metadata to the elements such as atomic weight or symbol.</p>
 <h2 id="collection--elements">Collection : Elements</h2>
 <p>For this example we will use simple _id numbers instead of ObjectIds.</p>
 <pre><code class="language-json">{
@@ -147,31 +147,43 @@ Let&rsquo;s use MongoDB to build an asteroid tagging engine that allows us to as
     &quot;label&quot; : &quot;magnesium&quot;   
 },{
     &quot;_id&quot; : 108,
-    &quot;label&quot; : &quot;phosphorus&quot;   
+    &quot;label&quot; : &quot;phosphorus&quot;
+},{
+    &quot;_id&quot; : 109,
+    &quot;label&quot; : &quot;silver&quot;
+},{
+    &quot;_id&quot; : 110,
+    &quot;label&quot; : &quot;gold&quot;
 }
 </code></pre>
 <h2 id="collection--asteroids">Collection : Asteroids</h2>
 <pre><code class="language-json">{
+    &quot;_id&quot; : 1000,
     &quot;name&quot; : &quot;Bennu&quot;,
     &quot;elements&quot; : [100, 101, 108]
 },{
+    &quot;_id&quot; : 1001,
     &quot;name&quot; : &quot;Ceres&quot;,
     &quot;elements&quot; : [106, 103, 108]
 },{
+    &quot;_id&quot; : 1002,
     &quot;name&quot; : &quot;Pallas&quot;,
     &quot;elements&quot; : [103, 102, 105]
 },{
+    &quot;_id&quot; : 1003,
     &quot;name&quot; : &quot;Juno&quot;,
     &quot;elements&quot; : [107, 106, 100]
 },{
+    &quot;_id&quot; : 1004,
     &quot;name&quot; : &quot;Vesta&quot;,
     &quot;elements&quot; : [108, 101, 103]
 },{
+    &quot;_id&quot; : 1005,
     &quot;name&quot; : &quot;Astraea&quot;,
     &quot;elements&quot; : [105, 101, 106]
 }
 </code></pre>
-<h2 id="lookup---mongodb-join">$lookup - MongoDB JOIN</h2>
+<h1 id="lookup---mongodb-join">$lookup - MongoDB JOIN</h1>
 <pre><code class="language-python">[
     {
         '$lookup': {
@@ -183,11 +195,9 @@ Let&rsquo;s use MongoDB to build an asteroid tagging engine that allows us to as
     }
 ]
 </code></pre>
-<p>Returns</p>
+<p>Returns all asteroid documents with the cooresponding element names from the elements collection. Example:</p>
 <pre><code class="language-json">{
-  &quot;_id&quot;: {
-    &quot;$oid&quot;: &quot;63ed984c0768d8f090898024&quot;
-  },
+  &quot;_id&quot;: 1000,
   &quot;name&quot;: &quot;Bennu&quot;,
   &quot;elements&quot;: [
     100,
@@ -209,6 +219,101 @@ Let&rsquo;s use MongoDB to build an asteroid tagging engine that allows us to as
     }
   ]
 }
+</code></pre>
+<p>This pattern allows us to rename the element labels as needed without having to update the 1000&rsquo;s of asteroids with that specific element name.  This model is certainly DRY [Don&rsquo;t Repeat Yourself] as well as very SQL like, having a foreign key relationship from the elements array to the Elements collection.</p>
+<h2 id="find-the-nickel">Find the nickel</h2>
+<p>Find all the asteroids that are known to have nickel in them.</p>
+<pre><code class="language-python">[
+    {
+        '$match': {
+            'label': 'nickel'
+        }
+    }, {
+        '$lookup': {
+            'from': 'asteroids', 
+            'localField': '_id', 
+            'foreignField': 'elements', 
+            'as': 'asteroids'
+        }
+    }
+]
+</code></pre>
+<p>Returns the element document with each of the asteroids embedded in the <code>asteroids</code> array.</p>
+<pre><code class="language-json">{
+  &quot;_id&quot;: 101,
+  &quot;label&quot;: &quot;nickel&quot;,
+  &quot;asteroids&quot;: [
+    {
+      &quot;_id&quot;: 1000,
+      &quot;name&quot;: &quot;Bennu&quot;,
+      &quot;elements&quot;: [
+        100,
+        101,
+        108
+      ]
+    },
+    {
+      &quot;_id&quot;: 1004,
+      &quot;name&quot;: &quot;Vesta&quot;,
+      &quot;elements&quot;: [
+        108,
+        101,
+        103
+      ]
+    },
+    {
+      &quot;_id&quot;: 1005,
+      &quot;name&quot;: &quot;Astraea&quot;,
+      &quot;elements&quot;: [
+        105,
+        101,
+        106
+      ]
+    }
+  ]
+}
+</code></pre>
+<h2 id="inserting-multiple-elements-into-an-array">Inserting multiple elements into an array</h2>
+<p>According to the document, we see that the asteroid Bennu is made up of <code>iron</code>, <code>nickel</code>, and <code>phosphorus</code>.  Let&rsquo;s add a couple more elements like <code>silver</code> and <code>gold</code>.</p>
+<p>We will do this by using the MongoDB operator <a href="https://www.mongodb.com/docs/manual/reference/operator/update/addToSet/#add-to-array" target="_blank">$addToSet</a>.</p>
+<pre><code class="language-python">db.asteroids.update_one(
+    {&quot;_id&quot;: 1000},
+    {&quot;$addToSet&quot;: {
+        &quot;elements&quot;: {
+            &quot;$each&quot;:
+            [109,110]}}})
+</code></pre>
+<h3 id="gold-streak">Gold streak</h3>
+<p>Lets imagine new sensor technology has allowed us to find gold in not one but MULTIPLE asteroids, let&rsquo;s update the collection with this new information!  We are going to reuse the <code>$addToSet</code> operator here so that if we wanted to add multiple elements to multiple asteroids, we could totally do so.</p>
+<pre><code class="language-python">db.asteroids.update_many(
+    {
+        '_id': {
+            '$in': [
+                1002,
+                1003
+            ]
+        }
+    },
+    {&quot;$addToSet&quot;: {
+        &quot;elements&quot;: {
+            &quot;$each&quot;:
+            [110]}}})
+</code></pre>
+<h3 id="mistakes-happen">Mistakes happen</h3>
+<p>Sometimes the sensors are all wrong, let&rsquo;s delete this element from those asteroids.  Again I&rsquo;m going to use an operator that allows you to delete multiple elements from multiple asteroids.  In this case we are only going to delete <code>110</code> from asteroids <code>1002</code> and <code>1003</code>.</p>
+<pre><code class="language-python">db.asteroids.update_many(
+    {
+        '_id': {
+            '$in': [
+                1002,
+                1003
+            ]
+        }
+    },
+    {&quot;$pull&quot;: {
+        &quot;elements&quot;: {
+            &quot;$in&quot;:
+            [110]}}})
 </code></pre>
     </div>
 </article>
