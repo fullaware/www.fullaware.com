@@ -3,13 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://www.fullaware.com/</loc>
-    <lastmod>2023-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-21T20:30:43-05:00</lastmod>
+  </url><url>
+    <loc>http://www.fullaware.com/tags/k8s/</loc>
+    <lastmod>2023-02-21T20:30:43-05:00</lastmod>
   </url><url>
     <loc>http://www.fullaware.com/tags/mongodb/</loc>
-    <lastmod>2023-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-21T20:30:43-05:00</lastmod>
+  </url><url>
+    <loc>http://www.fullaware.com/posts/k8smongodb/</loc>
+    <lastmod>2023-02-21T20:30:43-05:00</lastmod>
   </url><url>
     <loc>http://www.fullaware.com/posts/</loc>
-    <lastmod>2023-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-21T20:30:43-05:00</lastmod>
   </url><url>
     <loc>http://www.fullaware.com/tags/python/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
@@ -24,9 +30,6 @@
     <lastmod>2022-12-31T10:08:07-05:00</lastmod>
   </url><url>
     <loc>http://www.fullaware.com/tags/homelab/</loc>
-    <lastmod>2022-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.fullaware.com/tags/k8s/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.fullaware.com/posts/piholewildcarddns/</loc>

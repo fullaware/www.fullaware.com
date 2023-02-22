@@ -6,7 +6,17 @@
     <description>Recent content on Full Aware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.fullaware.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Feb 2023 20:30:43 -0500</lastBuildDate><atom:link href="http://www.fullaware.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MongoDB Kubernetes Deployment</title>
+      <link>http://www.fullaware.com/posts/k8smongodb/</link>
+      <pubDate>Tue, 21 Feb 2023 20:30:43 -0500</pubDate>
+      
+      <guid>http://www.fullaware.com/posts/k8smongodb/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;While writing &lt;a href=&#34;https://www.fullaware.com/posts/mongodbtags/&#34; target=&#34;_blank&#34;&gt;Tagging Asteroids with MongoDB&lt;/a&gt; I was able to quickly provision a cluster on the free tier of &lt;a href=&#34;https://www.mongodb.com/atlas/database&#34; target=&#34;_blank&#34;&gt;MongoDB Atlas&lt;/a&gt;. What I originally wanted was to quickly stand up a MongoDB instance in my Kubernetes environment but found most documentation too complex for my usecase.  Just give me a MongoDB &amp;ldquo;dialtone&amp;rdquo; as quickly as possible without having to install the binaries on my system.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Tagging Asteroids with MongoDB and Python</title>
       <link>http://www.fullaware.com/posts/mongodbtags/</link>
