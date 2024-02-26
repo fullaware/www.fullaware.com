@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mongodb on Full Aware</title>
-    <link>https://fullaware.com/tags/mongodb/</link>
+    <link>http://www.fullaware.com/tags/mongodb/</link>
     <description>Recent content in Mongodb on Full Aware</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Tue, 21 Feb 2023 20:30:43 -0500</lastBuildDate>
-    <atom:link href="https://fullaware.com/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.fullaware.com/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MongoDB Kubernetes Deployment</title>
-      <link>https://fullaware.com/posts/k8smongodb/</link>
+      <link>http://www.fullaware.com/posts/k8smongodb/</link>
       <pubDate>Tue, 21 Feb 2023 20:30:43 -0500</pubDate>
-      <guid>https://fullaware.com/posts/k8smongodb/</guid>
-      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;While writing &lt;a href=&#34;https://www.fullaware.com/posts/mongodbtags/&#34;&gt;Tagging Asteroids with MongoDB&lt;/a&gt; I was able to quickly provision a cluster on the free tier of &lt;a href=&#34;https://www.mongodb.com/atlas/database&#34;&gt;MongoDB Atlas&lt;/a&gt;. What I originally wanted was to quickly stand up a MongoDB instance in my Kubernetes environment but found most documentation too complex for my usecase.  Just give me a MongoDB &amp;ldquo;dialtone&amp;rdquo; as quickly as possible without having to install the binaries on my system.&lt;/p&gt;</description>
+      <guid>http://www.fullaware.com/posts/k8smongodb/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;While writing &lt;a href=&#34;https://www.fullaware.com/posts/mongodbtags/&#34; target=&#34;_blank&#34;&gt;Tagging Asteroids with MongoDB&lt;/a&gt; I was able to quickly provision a cluster on the free tier of &lt;a href=&#34;https://www.mongodb.com/atlas/database&#34; target=&#34;_blank&#34;&gt;MongoDB Atlas&lt;/a&gt;. What I originally wanted was to quickly stand up a MongoDB instance in my Kubernetes environment but found most documentation too complex for my usecase.  Just give me a MongoDB &amp;ldquo;dialtone&amp;rdquo; as quickly as possible without having to install the binaries on my system.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tagging Asteroids with MongoDB</title>
-      <link>https://fullaware.com/posts/mongodbtags/</link>
+      <link>http://www.fullaware.com/posts/mongodbtags/</link>
       <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://fullaware.com/posts/mongodbtags/</guid>
+      <guid>http://www.fullaware.com/posts/mongodbtags/</guid>
       <description>&lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s use MongoDB to build an asteroid tagging engine that allows us to assign multiple elements to any asteroid then query based on those elements.&lt;/p&gt;</description>
     </item>
   </channel>

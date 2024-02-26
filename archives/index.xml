@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives on Full Aware</title>
-    <link>https://fullaware.com/archives/</link>
+    <link>http://www.fullaware.com/archives/</link>
     <description>Recent content in Archives on Full Aware</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <atom:link href="https://fullaware.com/archives/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="http://www.fullaware.com/archives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
