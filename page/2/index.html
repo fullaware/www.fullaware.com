@@ -21,11 +21,11 @@
   <meta name="description" content="Professional Techno-tinkerer" />
   <meta name="author" content="Full Aware">
   <meta name="keywords" content="">
-  <title>Mongodb | Full Aware</title>
-  <link rel="canonical" href="http://fullaware.com/tags/mongodb/" />
+  <title>Full Aware</title>
+  <link rel="canonical" href="http://fullaware.com/" />
   
     <link
-      href="/tags/mongodb/index.xml"
+      href="/index.xml"
       rel="alternate"
       type="application/rss+xml"
       title="Full Aware"
@@ -35,19 +35,19 @@
   
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Professional Techno-tinkerer" />
-  <meta property="og:title" content="Mongodb" />
+  <meta property="og:title" content="Full Aware" />
   <meta property="og:site_name" content="Full Aware" />
   <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:url" content="http://fullaware.com/tags/mongodb/" />
+  <meta property="og:url" content="http://fullaware.com/" />
   <meta property="og:locale" content="en-us" />
 
   
 
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Mongodb | Full Aware" />
+  <meta name="twitter:title" content="Full Aware" />
   <meta name="twitter:description" content="Professional Techno-tinkerer" />
-  <meta name="twitter:domain" content="http://fullaware.com/tags/mongodb/" />
+  <meta name="twitter:domain" content="http://fullaware.com/" />
 
   
   
@@ -123,7 +123,7 @@
               </a>
             </li>
           
-            <li class="nav-bar-item active">
+            <li class="nav-bar-item">
               <a class="nav-link navbar-button" href="/tags/" title="tags">
                 <span>tags</span>
               </a>
@@ -171,29 +171,6 @@
       <div class="container has-padding">
         <div class="breadcrumb">
           
-<ol  class="breadcrumb-nav">
-  
-
-  
-
-  
-
-<li >
-  <a href="http://fullaware.com/">Home</a>
-</li>
-
-
-<li >
-  <a href="http://fullaware.com/tags/">Tags</a>
-</li>
-
-
-<li class="active">
-  <a href="http://fullaware.com/tags/mongodb/">Mongodb</a>
-</li>
-
-</ol>
-
 
 
 
@@ -204,59 +181,121 @@
 </header>
 
     
-<main id="main" class="list">
+<main id="main" class="index-page homepage" role="main">
   <div class="container has-padding">
-    <h2>
-
-
-
-
-
-
-
-<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path stroke-linejoin='round' stroke-width='48' d='M144 144h320M144 256h320M144 368h320' class='ionicon-fill-none'/><path stroke-linecap='square' stroke-linejoin='round' d='M64 128h32v32H64zM64 240h32v32H64zM64 352h32v32H64z' class='ionicon-fill-none ionicon-stroke-width'/></svg>
-
-
-
-
-
-
-
-
-
-Mongodb</h2>
-    <ul class="list">
-      
-      
-      <li class="post">
-        <a href="http://fullaware.com/posts/k8smongodb/" class="title">MongoDB Kubernetes Deployment</a>
-        <time class="date">2023-02-21</time>
-        
-          <ul class="tags">
-          
-            <li class="hashed-tag"><a href="http://fullaware.com/tags/mongodb">mongodb</a></li>
-          
-            <li class="hashed-tag"><a href="http://fullaware.com/tags/k8s">k8s</a></li>
-          
-          </ul>
-        
-      </li>
-      
-      <li class="post">
-        <a href="http://fullaware.com/posts/mongodbtags/" class="title">Tagging Asteroids with MongoDB</a>
-        <time class="date">2023-02-15</time>
-        
-          <ul class="tags">
-          
-            <li class="hashed-tag"><a href="http://fullaware.com/tags/mongodb">mongodb</a></li>
-          
-          </ul>
-        
-      </li>
-      
-    </ul>
+    
+    
     
 
+    
+    <div class="article-list">
+      
+      <article class="post">
+        <h3 class="title">
+          <a href="http://fullaware.com/posts/homelab/" title="Homelab">Homelab</a>
+        </h3>
+        
+          <div class="content summary">
+            <p><h2 id="objective">Objective</h2>
+<p>To have a single server with enough power to run nested vSphere 8 and Tanzu Kubernetes Grid with NSX.  But with vSphere 8 I wanted to make sure I had something on the <a href="https://www.vmware.com/resources/compatibility/detail.php?deviceCategory=server&amp;productid=42895">HCL</a>.  Dell PowerEdge R740 will carry the homelab moving forward.</p></p>
+            
+              <span class="hellip">&hellip;</span>
+            
+          </div>
+          <a class="readmore" href="http://fullaware.com/posts/homelab/" aria-label="READ MORE">READ MORE</a>
+        
+        <div class="date float-right">
+          
+          <time datetime="2022-12-29T00:00:00Z" class="date">December 29, 2022</time>
+        </div>
+      </article>
+      
+      <article class="post">
+        <h3 class="title">
+          <a href="http://fullaware.com/posts/k8s-wait/" title="K8s Waiting for Condition=Available=True">K8s Waiting for Condition=Available=True</a>
+        </h3>
+        
+          <div class="content summary">
+            <p><p>While working with Ansible for standing up a vanilla Kubernetes 1.25.5 cluster I found myself separating the the initial bootstrapping of the cluster, which includes intalling the CNI <code>antrea</code> from the rest of the configuration (<code>metrics</code>,<code>metallb</code>,<code>contour</code>) due to waiting for <code>antrea</code> to become Ready.</p></p>
+            
+              <span class="hellip">&hellip;</span>
+            
+          </div>
+          <a class="readmore" href="http://fullaware.com/posts/k8s-wait/" aria-label="READ MORE">READ MORE</a>
+        
+        <div class="date float-right">
+          
+          <time datetime="2022-12-24T10:17:05-0500" class="date">December 24, 2022</time>
+        </div>
+      </article>
+      
+      <article class="post">
+        <h3 class="title">
+          <a href="http://fullaware.com/posts/comingsoon/" title="Coming Soon">Coming Soon</a>
+        </h3>
+        
+          <div class="content summary">
+            <p><p>Future home of Kubernetes, Python, VMware and homelab efforts.</p></p>
+            
+              <span class="hellip">&hellip;</span>
+            
+          </div>
+          <a class="readmore" href="http://fullaware.com/posts/comingsoon/" aria-label="READ MORE">READ MORE</a>
+        
+        <div class="date float-right">
+          
+          <time datetime="2022-12-23T09:03:20-0800" class="date">December 23, 2022</time>
+        </div>
+      </article>
+      
+    </div>
+    
+
+
+<div class="pagination">
+  <ul class="pagination-container">
+    
+      <li class="page-item to-left">
+        <a href="/" class="page-link" aria-label="Previous">
+          <span aria-hidden="true">&#xab; Previous</span>
+        </a>
+      </li>
+    
+
+    
+    
+
+    
+      
+      
+      
+      
+      
+        
+        
+      
+
+      
+        <li class="page-item  page-number"><a class="page-link" href="/">1</a></li>
+      
+    
+      
+      
+      
+      
+      
+        
+        
+      
+
+      
+        <li class="page-item current page-number"><a class="page-link" href="/page/2/">2</a></li>
+      
+    
+
+    
+  </ul>
+</div>
 
 
 
@@ -278,7 +317,7 @@ Mongodb</h2>
       </li>
       
       <li>
-        <a class="nav-link navbar-button" href="http://fullaware.com/tags/mongodb/index.xml" type="application/rss&#43;xml">RSS</a>
+        <a class="nav-link navbar-button" href="http://fullaware.com/index.xml" type="application/rss&#43;xml">RSS</a>
         </li>
       <li>
         <a

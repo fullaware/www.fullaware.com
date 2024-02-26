@@ -1,49 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>k8s on Full Aware</title>
-    <link>http://www.fullaware.com/tags/k8s/</link>
-    <description>Recent content in k8s on Full Aware</description>
+    <title>K8s on Full Aware</title>
+    <link>http://fullaware.com/tags/k8s/</link>
+    <description>Recent content in K8s on Full Aware</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 21 Feb 2023 20:30:43 -0500</lastBuildDate><atom:link href="http://www.fullaware.com/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://fullaware.com/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Complexity kills</title>
+      <link>http://fullaware.com/posts/complexitykills/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://fullaware.com/posts/complexitykills/</guid>
+      <description>&lt;p&gt;Before designing your next microservices architecture, consider this brilliant post by Andrei Taranchenko &lt;a href=&#34;https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices&#34;&gt;Death by a Thousand Microservices&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>MongoDB Kubernetes Deployment</title>
-      <link>http://www.fullaware.com/posts/k8smongodb/</link>
+      <link>http://fullaware.com/posts/k8smongodb/</link>
       <pubDate>Tue, 21 Feb 2023 20:30:43 -0500</pubDate>
-      
-      <guid>http://www.fullaware.com/posts/k8smongodb/</guid>
-      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
-&lt;p&gt;While writing &lt;a href=&#34;https://www.fullaware.com/posts/mongodbtags/&#34; target=&#34;_blank&#34;&gt;Tagging Asteroids with MongoDB&lt;/a&gt; I was able to quickly provision a cluster on the free tier of &lt;a href=&#34;https://www.mongodb.com/atlas/database&#34; target=&#34;_blank&#34;&gt;MongoDB Atlas&lt;/a&gt;. What I originally wanted was to quickly stand up a MongoDB instance in my Kubernetes environment but found most documentation too complex for my usecase.  Just give me a MongoDB &amp;ldquo;dialtone&amp;rdquo; as quickly as possible without having to install the binaries on my system.&lt;/p&gt;</description>
+      <guid>http://fullaware.com/posts/k8smongodb/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;While writing &lt;a href=&#34;https://www.fullaware.com/posts/mongodbtags/&#34;&gt;Tagging Asteroids with MongoDB&lt;/a&gt; I was able to quickly provision a cluster on the free tier of &lt;a href=&#34;https://www.mongodb.com/atlas/database&#34;&gt;MongoDB Atlas&lt;/a&gt;. What I originally wanted was to quickly stand up a MongoDB instance in my Kubernetes environment but found most documentation too complex for my usecase.  Just give me a MongoDB &amp;ldquo;dialtone&amp;rdquo; as quickly as possible without having to install the binaries on my system.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pi-Hole Wildcard DNS</title>
-      <link>http://www.fullaware.com/posts/piholewildcarddns/</link>
+      <link>http://fullaware.com/posts/piholewildcarddns/</link>
       <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.fullaware.com/posts/piholewildcarddns/</guid>
-      <description>&lt;p&gt;In order to access Kubernetes applications via my ingress &lt;a href=&#34;https://projectcontour.io&#34; target=&#34;_blank&#34;&gt;projectcontour.io&lt;/a&gt;, I&amp;rsquo;ll use a wildcard DNS entry.&lt;/p&gt;
-&lt;p&gt;Unfortunately this isn&amp;rsquo;t a simple entry in the web UI for Pi-hole (yet?).  A quick search and &lt;a href=&#34;https://brandonrozek.com/blog/wildcarddomainspihole/&#34; target=&#34;_blank&#34;&gt;Brandon Rozek&lt;/a&gt; had documented the steps to add a wildcard DNS entry in &lt;code&gt;dnsmasq&lt;/code&gt;.&lt;/p&gt;</description>
+      <guid>http://fullaware.com/posts/piholewildcarddns/</guid>
+      <description>&lt;p&gt;In order to access Kubernetes applications via my ingress &lt;a href=&#34;https://projectcontour.io&#34;&gt;projectcontour.io&lt;/a&gt;, I&amp;rsquo;ll use a wildcard DNS entry.&lt;/p&gt;&#xA;&lt;p&gt;Unfortunately this isn&amp;rsquo;t a simple entry in the web UI for Pi-hole (yet?).  A quick search and &lt;a href=&#34;https://brandonrozek.com/blog/wildcarddomainspihole/&#34;&gt;Brandon Rozek&lt;/a&gt; had documented the steps to add a wildcard DNS entry in &lt;code&gt;dnsmasq&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>K8s Waiting for Condition=Available=True</title>
-      <link>http://www.fullaware.com/posts/k8s-wait/</link>
+      <link>http://fullaware.com/posts/k8s-wait/</link>
       <pubDate>Sat, 24 Dec 2022 10:17:05 -0500</pubDate>
-      
-      <guid>http://www.fullaware.com/posts/k8s-wait/</guid>
+      <guid>http://fullaware.com/posts/k8s-wait/</guid>
       <description>&lt;p&gt;While working with Ansible for standing up a vanilla Kubernetes 1.25.5 cluster I found myself separating the the initial bootstrapping of the cluster, which includes intalling the CNI &lt;code&gt;antrea&lt;/code&gt; from the rest of the configuration (&lt;code&gt;metrics&lt;/code&gt;,&lt;code&gt;metallb&lt;/code&gt;,&lt;code&gt;contour&lt;/code&gt;) due to waiting for &lt;code&gt;antrea&lt;/code&gt; to become Ready.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Coming Soon</title>
-      <link>http://www.fullaware.com/posts/comingsoon/</link>
+      <link>http://fullaware.com/posts/comingsoon/</link>
       <pubDate>Fri, 23 Dec 2022 09:03:20 -0800</pubDate>
-      
-      <guid>http://www.fullaware.com/posts/comingsoon/</guid>
+      <guid>http://fullaware.com/posts/comingsoon/</guid>
       <description>&lt;p&gt;Future home of Kubernetes, Python, VMware and homelab efforts.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
