@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vmware on Full Aware</title>
-    <link>http://fullaware.com/tags/vmware/</link>
+    <link>https://fullaware.com/tags/vmware/</link>
     <description>Recent content in Vmware on Full Aware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Dec 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://fullaware.com/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://fullaware.com/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Homelab</title>
-      <link>http://fullaware.com/posts/homelab/</link>
+      <link>https://fullaware.com/posts/homelab/</link>
       <pubDate>Thu, 29 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://fullaware.com/posts/homelab/</guid>
+      <guid>https://fullaware.com/posts/homelab/</guid>
       <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;&#xA;&lt;p&gt;To have a single server with enough power to run nested vSphere 8 and Tanzu Kubernetes Grid with NSX.  But with vSphere 8 I wanted to make sure I had something on the &lt;a href=&#34;https://www.vmware.com/resources/compatibility/detail.php?deviceCategory=server&amp;amp;productid=42895&#34;&gt;HCL&lt;/a&gt;.  Dell PowerEdge R740 will carry the homelab moving forward.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Coming Soon</title>
-      <link>http://fullaware.com/posts/comingsoon/</link>
+      <link>https://fullaware.com/posts/comingsoon/</link>
       <pubDate>Fri, 23 Dec 2022 09:03:20 -0800</pubDate>
-      <guid>http://fullaware.com/posts/comingsoon/</guid>
+      <guid>https://fullaware.com/posts/comingsoon/</guid>
       <description>&lt;p&gt;Future home of Kubernetes, Python, VMware and homelab efforts.&lt;/p&gt;</description>
     </item>
   </channel>

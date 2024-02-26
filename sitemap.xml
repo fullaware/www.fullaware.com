@@ -2,62 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://fullaware.com/posts/complexitykills/</loc>
+    <loc>https://fullaware.com/posts/complexitykills/</loc>
     <lastmod>2023-12-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/</loc>
+    <loc>https://fullaware.com/</loc>
     <lastmod>2023-12-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/tags/k8s/</loc>
+    <loc>https://fullaware.com/tags/k8s/</loc>
     <lastmod>2023-12-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/posts/</loc>
+    <loc>https://fullaware.com/posts/</loc>
     <lastmod>2023-12-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/tags/</loc>
+    <loc>https://fullaware.com/tags/</loc>
     <lastmod>2023-12-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/tags/mongodb/</loc>
+    <loc>https://fullaware.com/tags/mongodb/</loc>
     <lastmod>2023-02-21T20:30:43-05:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/posts/k8smongodb/</loc>
+    <loc>https://fullaware.com/posts/k8smongodb/</loc>
     <lastmod>2023-02-21T20:30:43-05:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/posts/mongodbtags/</loc>
+    <loc>https://fullaware.com/posts/mongodbtags/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/posts/firefoxwildvine/</loc>
+    <loc>https://fullaware.com/posts/firefoxwildvine/</loc>
     <lastmod>2022-12-31T10:08:07-05:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/tags/linux/</loc>
+    <loc>https://fullaware.com/tags/linux/</loc>
     <lastmod>2022-12-31T10:08:07-05:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/tags/homelab/</loc>
+    <loc>https://fullaware.com/tags/homelab/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/posts/piholewildcarddns/</loc>
+    <loc>https://fullaware.com/posts/piholewildcarddns/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/posts/homelab/</loc>
+    <loc>https://fullaware.com/posts/homelab/</loc>
     <lastmod>2022-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/tags/vmware/</loc>
+    <loc>https://fullaware.com/tags/vmware/</loc>
     <lastmod>2022-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/posts/k8s-wait/</loc>
+    <loc>https://fullaware.com/posts/k8s-wait/</loc>
     <lastmod>2022-12-24T10:17:05-05:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/about/</loc>
+    <loc>https://fullaware.com/about/</loc>
     <lastmod>2022-12-23T17:13:09-05:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/posts/comingsoon/</loc>
+    <loc>https://fullaware.com/posts/comingsoon/</loc>
     <lastmod>2022-12-23T09:03:20-08:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/tags/python/</loc>
+    <loc>https://fullaware.com/tags/python/</loc>
     <lastmod>2022-12-23T09:03:20-08:00</lastmod>
   </url><url>
-    <loc>http://fullaware.com/archives/</loc>
+    <loc>https://fullaware.com/archives/</loc>
   </url><url>
-    <loc>http://fullaware.com/categories/</loc>
+    <loc>https://fullaware.com/categories/</loc>
   </url>
 </urlset>
