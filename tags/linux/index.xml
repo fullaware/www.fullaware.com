@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Full Aware</title>
-    <link>http://localhost:1313/tags/linux/</link>
+    <link>http://www.fullaware.com/tags/linux/</link>
     <description>Recent content in Linux on Full Aware</description>
     <generator>Hugo 0.125.2</generator>
     <language>en</language>
     <lastBuildDate>Sat, 31 Dec 2022 10:08:07 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.fullaware.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Firefox: The WidevineCdm plugin has crashed</title>
-      <link>http://localhost:1313/posts/firefoxwildvine/</link>
+      <link>http://www.fullaware.com/posts/firefoxwildvine/</link>
       <pubDate>Sat, 31 Dec 2022 10:08:07 -0500</pubDate>
-      <guid>http://localhost:1313/posts/firefoxwildvine/</guid>
+      <guid>http://www.fullaware.com/posts/firefoxwildvine/</guid>
       <description>&lt;p&gt;Firefox 108.0.1 (64-bit) - &amp;ldquo;The WidevineCdm plugin has crashed&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;While studying for my CKAD on Udemy over the holidays I encountered this error when attempting to open ANYTHING that had DRM protected video; Udemy, Netflix, Hulu, etc.  Some recommended fixes included maintaining a separate &lt;code&gt;firefox&lt;/code&gt; binary.  Luckily I found the fix on &lt;a href=&#34;https://askubuntu.com/questions/1418203/netflix-on-firefox-the-widevinecdm-plugin-has-crashed&#34; target=&#34;_blank&#34;&gt;AskUbuntu.com&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

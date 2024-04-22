@@ -2,65 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://www.fullaware.com/</loc>
     <lastmod>2024-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/k8s/</loc>
+    <loc>http://www.fullaware.com/tags/k8s/</loc>
     <lastmod>2024-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/k8scontexts/</loc>
+    <loc>http://www.fullaware.com/posts/k8scontexts/</loc>
     <lastmod>2024-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://www.fullaware.com/posts/</loc>
     <lastmod>2024-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mongodb/</loc>
+    <loc>http://www.fullaware.com/tags/mongodb/</loc>
     <lastmod>2024-04-17T09:59:03-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/mongodbhelm/</loc>
+    <loc>http://www.fullaware.com/posts/mongodbhelm/</loc>
     <lastmod>2024-04-17T09:59:03-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/locationbyip/</loc>
+    <loc>http://www.fullaware.com/posts/locationbyip/</loc>
     <lastmod>2024-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>http://www.fullaware.com/tags/python/</loc>
     <lastmod>2024-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/complexitykills/</loc>
+    <loc>http://www.fullaware.com/posts/complexitykills/</loc>
     <lastmod>2023-12-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/k8smongodb/</loc>
+    <loc>http://www.fullaware.com/posts/k8smongodb/</loc>
     <lastmod>2023-02-21T20:30:43-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/mongodbtags/</loc>
+    <loc>http://www.fullaware.com/posts/mongodbtags/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/firefoxwildvine/</loc>
+    <loc>http://www.fullaware.com/posts/firefoxwildvine/</loc>
     <lastmod>2022-12-31T10:08:07-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>http://www.fullaware.com/tags/linux/</loc>
     <lastmod>2022-12-31T10:08:07-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/homelab/</loc>
+    <loc>http://www.fullaware.com/tags/homelab/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/piholewildcarddns/</loc>
+    <loc>http://www.fullaware.com/posts/piholewildcarddns/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/homelab/</loc>
+    <loc>http://www.fullaware.com/posts/homelab/</loc>
     <lastmod>2022-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vmware/</loc>
+    <loc>http://www.fullaware.com/tags/vmware/</loc>
     <lastmod>2022-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/k8s-wait/</loc>
+    <loc>http://www.fullaware.com/posts/k8s-wait/</loc>
     <lastmod>2022-12-24T10:17:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://www.fullaware.com/about/</loc>
     <lastmod>2022-12-23T17:13:09-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>http://www.fullaware.com/archives/</loc>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>http://www.fullaware.com/search/</loc>
   </url>
 </urlset>
