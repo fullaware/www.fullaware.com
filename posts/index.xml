@@ -4,16 +4,23 @@
     <title>Posts on Full Aware</title>
     <link>http://www.fullaware.com/posts/</link>
     <description>Recent content in Posts on Full Aware</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.fullaware.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to structure ArgoCD</title>
+      <link>http://www.fullaware.com/posts/argocdappsets/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.fullaware.com/posts/argocdappsets/</guid>
+      <description>&lt;p&gt;This is a great reference for understanding the App of Apps model for deployment with ArgoCD.  &lt;a href=&#34;https://codefresh.io/blog/how-to-structure-your-argo-cd-repositories-using-application-sets/&#34; target=&#34;_blank&#34;&gt;How to Structure Your Argo CD Repositories Using Application Sets&lt;/a&gt; post by &lt;a href=&#34;https://codefresh.io/author/kostiscodefresh-io/&#34; target=&#34;_blank&#34;&gt;Kostis Kapelonis&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Managing multiple Kubernetes contexts</title>
       <link>http://www.fullaware.com/posts/k8scontexts/</link>
       <pubDate>Mon, 22 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://www.fullaware.com/posts/k8scontexts/</guid>
-      <description>Keep all INDIVIDUAL kubeconfig.yaml files under .kube/contexts&#xA;Then put the following line in your .bashrc (Linux) or .bash_profile (MacOS)&#xA;export KUBECONFIG=$(for YAML in $(find ${HOME}/.kube/contexts -name &#39;*.yaml&#39;) ; do echo -n &amp;quot;:${YAML}&amp;quot;; done) </description>
+      <description>&lt;p&gt;Keep all INDIVIDUAL kubeconfig.yaml files under &lt;code&gt;.kube/contexts&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Then put the following line in your &lt;code&gt;.bashrc&lt;/code&gt; (Linux) or &lt;code&gt;.bash_profile&lt;/code&gt; (MacOS)&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;.kube/contexts&#xA;├── k8scluster1.yaml&#xA;└── k8scluster2.yaml&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;pre&gt;&lt;code&gt;export KUBECONFIG=${HOME}/.kube/config:$(for YAML in $(find ${HOME}/.kube/contexts -name &#39;*.yaml&#39;) ; do echo -n &amp;quot;:${YAML}&amp;quot;; done)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>MongoDB Proper Kubernetes installation with Helm</title>

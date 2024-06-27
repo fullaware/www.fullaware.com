@@ -4,7 +4,7 @@
     <title>Search on Full Aware</title>
     <link>http://www.fullaware.com/search/</link>
     <description>Recent content in Search on Full Aware</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <atom:link href="http://www.fullaware.com/search/index.xml" rel="self" type="application/rss+xml" />
   </channel>

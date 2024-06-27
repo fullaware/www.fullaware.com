@@ -9,14 +9,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.125.2">
+<meta name="generator" content="Hugo 0.121.2">
 
 
 <link rel="shortcut icon" href="favicon.ico" />
 
 
 
-<title>K8s - Full Aware</title>
+<title>k8s - Full Aware</title>
 
 
 <meta name="author" content="Full Aware" />
@@ -25,12 +25,12 @@
 
 <link rel="alternate" type="application/rss+xml" href="http://www.fullaware.com/tags/k8s/index.xml" title="Full Aware" />
 
-<meta property="og:title" content="K8s" />
-<meta name="twitter:title" content="K8s" />
+<meta property="og:title" content="k8s" />
+<meta name="twitter:title" content="k8s" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.fullaware.com/tags/k8s/" /><meta property="og:image" content="http://www.fullaware.com/img/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="http://www.fullaware.com/img/og.png" /><meta property="og:updated_time" content="2024-04-22T00:00:00+00:00" />
+<meta name="twitter:image" content="http://www.fullaware.com/img/og.png" /><meta property="og:updated_time" content="2024-06-27T00:00:00+00:00" />
 
 
 <style>
@@ -95,10 +95,27 @@
                 
 
 <div class="page-info">
-  <span>Posts with the tag K8s: </span>
+  <span>Posts with the tag k8s: </span>
 </div>
 
 
+
+<div class="post">
+  <h2 class="post-item post-title">
+    <a href="http://www.fullaware.com/posts/argocdappsets/">How to structure ArgoCD</a>
+  </h2>
+  <div class="post-item post-meta">
+    <span><i class="iconfont icon-today-sharp"></i>&nbsp;2024-06-27</span>
+
+
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/k8s">k8s</a>&nbsp;</span>
+
+  </div>
+  <div class="post-item post-summary markdown-body">
+    <p>This is a great reference for understanding the App of Apps model for deployment with ArgoCD.  <a href="https://codefresh.io/blog/how-to-structure-your-argo-cd-repositories-using-application-sets/" target="_blank">How to Structure Your Argo CD Repositories Using Application Sets</a> post by <a href="https://codefresh.io/author/kostiscodefresh-io/" target="_blank">Kostis Kapelonis</a></p>
+  </div>
+</div>
 
 <div class="post">
   <h2 class="post-item post-title">
@@ -113,9 +130,14 @@
 
   </div>
   <div class="post-item post-summary markdown-body">
-    Keep all INDIVIDUAL kubeconfig.yaml files under .kube/contexts
-Then put the following line in your .bashrc (Linux) or .bash_profile (MacOS)
-export KUBECONFIG=$(for YAML in $(find ${HOME}/.kube/contexts -name '*.yaml') ; do echo -n &quot;:${YAML}&quot;; done) 
+    <p>Keep all INDIVIDUAL kubeconfig.yaml files under <code>.kube/contexts</code></p>
+<p>Then put the following line in your <code>.bashrc</code> (Linux) or <code>.bash_profile</code> (MacOS)</p>
+<pre><code>.kube/contexts
+├── k8scluster1.yaml
+└── k8scluster2.yaml
+</code></pre>
+<pre><code>export KUBECONFIG=${HOME}/.kube/config:$(for YAML in $(find ${HOME}/.kube/contexts -name '*.yaml') ; do echo -n &quot;:${YAML}&quot;; done)
+</code></pre>
   </div>
 </div>
 
@@ -255,27 +277,27 @@ export KUBECONFIG=$(for YAML in $(find ${HOME}/.kube/contexts -name '*.yaml') ; 
         <div>
             
             <span>
-                <a href="/tags/homelab/">Homelab</a>
+                <a href="/tags/homelab/">homelab</a>
             </span>
             
             <span>
-                <a href="/tags/k8s/">K8s</a>
+                <a href="/tags/k8s/">k8s</a>
             </span>
             
             <span>
-                <a href="/tags/linux/">Linux</a>
+                <a href="/tags/linux/">linux</a>
             </span>
             
             <span>
-                <a href="/tags/mongodb/">Mongodb</a>
+                <a href="/tags/mongodb/">mongodb</a>
             </span>
             
             <span>
-                <a href="/tags/python/">Python</a>
+                <a href="/tags/python/">python</a>
             </span>
             
             <span>
-                <a href="/tags/vmware/">Vmware</a>
+                <a href="/tags/vmware/">vmware</a>
             </span>
             
         </div>
@@ -343,27 +365,27 @@ export KUBECONFIG=$(for YAML in $(find ${HOME}/.kube/contexts -name '*.yaml') ; 
         <div>
             
             <span>
-                <a href="/tags/homelab/">Homelab</a>
+                <a href="/tags/homelab/">homelab</a>
             </span>
             
             <span>
-                <a href="/tags/k8s/">K8s</a>
+                <a href="/tags/k8s/">k8s</a>
             </span>
             
             <span>
-                <a href="/tags/linux/">Linux</a>
+                <a href="/tags/linux/">linux</a>
             </span>
             
             <span>
-                <a href="/tags/mongodb/">Mongodb</a>
+                <a href="/tags/mongodb/">mongodb</a>
             </span>
             
             <span>
-                <a href="/tags/python/">Python</a>
+                <a href="/tags/python/">python</a>
             </span>
             
             <span>
-                <a href="/tags/vmware/">Vmware</a>
+                <a href="/tags/vmware/">vmware</a>
             </span>
             
         </div>
@@ -397,7 +419,7 @@ export KUBECONFIG=$(for YAML in $(find ${HOME}/.kube/contexts -name '*.yaml') ; 
 
 
 
-<script defer src="/assets/js/fuji.min.645f1123be695831f419ab54c1bcba327325895c740014006e57070d4f3e5d6b553e929c4b46f40ea707249e9c7f7c2a446d32a39ce7319f80a34525586a8e0f.js" integrity="sha512-ZF8RI75pWDH0GatUwby6MnMliVx0ABQAblcHDU8&#43;XWtVPpKcS0b0DqcHJJ6cf3wqRG0yo5znMZ&#43;Ao0UlWGqODw=="></script>
+<script defer src="/assets/js/fuji.min.63d5cea7f1ee8e64c26d4e8c531866bbd7ff11fe457b0d3a4ac05238db02912b502392ba5e887d50456e8d0c755f47d50d5a0202aa58235aa683b276d053bf3c.js" integrity="sha512-Y9XOp/HujmTCbU6MUxhmu9f/Ef5Few06SsBSONsCkStQI5K6Xoh9UEVujQx1X0fVDVoCAqpYI1qmg7J20FO/PA=="></script>
 
 
 

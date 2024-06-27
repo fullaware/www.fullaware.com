@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Full Aware</title>
+    <title>python on Full Aware</title>
     <link>http://www.fullaware.com/tags/python/</link>
-    <description>Recent content in Python on Full Aware</description>
-    <generator>Hugo 0.125.2</generator>
+    <description>Recent content in python on Full Aware</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 26 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.fullaware.com/tags/python/index.xml" rel="self" type="application/rss+xml" />

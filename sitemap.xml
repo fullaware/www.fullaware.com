@@ -3,15 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://www.fullaware.com/</loc>
-    <lastmod>2024-04-22T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.fullaware.com/posts/argocdappsets/</loc>
+    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.fullaware.com/tags/k8s/</loc>
-    <lastmod>2024-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.fullaware.com/posts/k8scontexts/</loc>
-    <lastmod>2024-04-22T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.fullaware.com/posts/</loc>
+    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.fullaware.com/posts/k8scontexts/</loc>
     <lastmod>2024-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.fullaware.com/tags/mongodb/</loc>
