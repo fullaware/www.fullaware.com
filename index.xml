@@ -4,7 +4,7 @@
     <title>Full Aware</title>
     <link>http://www.fullaware.com/</link>
     <description>Recent content on Full Aware</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.fullaware.com/index.xml" rel="self" type="application/rss+xml" />
@@ -20,7 +20,7 @@
       <link>http://www.fullaware.com/posts/k8scontexts/</link>
       <pubDate>Mon, 22 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://www.fullaware.com/posts/k8scontexts/</guid>
-      <description>&lt;p&gt;Keep all INDIVIDUAL kubeconfig.yaml files under &lt;code&gt;.kube/contexts&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Then put the following line in your &lt;code&gt;.bashrc&lt;/code&gt; (Linux) or &lt;code&gt;.bash_profile&lt;/code&gt; (MacOS)&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;.kube/contexts&#xA;├── k8scluster1.yaml&#xA;└── k8scluster2.yaml&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;pre&gt;&lt;code&gt;export KUBECONFIG=${HOME}/.kube/config:$(for YAML in $(find ${HOME}/.kube/contexts -name &#39;*.yaml&#39;) ; do echo -n &amp;quot;:${YAML}&amp;quot;; done)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>&lt;p&gt;Keep all INDIVIDUAL kubeconfig.yaml files under &lt;code&gt;.kube/contexts&lt;/code&gt;&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;.kube/contexts&#xA;├── k8scluster1.yaml&#xA;└── k8scluster2.yaml&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Then put the following line in your &lt;code&gt;.bashrc&lt;/code&gt; (Linux) or &lt;code&gt;.bash_profile&lt;/code&gt; (MacOS)&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;export KUBECONFIG=${HOME}/.kube/config:$(for YAML in $(find ${HOME}/.kube/contexts -name &#39;*.yaml&#39;) ; do echo -n &amp;quot;:${YAML}&amp;quot;; done)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>MongoDB Proper Kubernetes installation with Helm</title>
@@ -90,7 +90,7 @@
       <link>http://www.fullaware.com/about/</link>
       <pubDate>Fri, 23 Dec 2022 17:13:09 -0500</pubDate>
       <guid>http://www.fullaware.com/about/</guid>
-      <description>I started as a field tech replacing modems, serial hubs, Okidata printers and terminals connected to Compaq servers running SCO UNIX. On the job training took place after I showed up at the site with replacement equipment and swapped it out. Only then was I allowed to call the &amp;ldquo;gurus&amp;rdquo;, Senior Support Engineers, who would walk me through all the commands necessary to allow them remote access via the modem. Sometimes the engineers were patient and happy to educate me on what exactly the commands did. I took those opportunities to learn what I could so that I might be able to solve the problems before calling them next time.</description>
+      <description>&lt;p&gt;I started as a field tech replacing modems, serial hubs, Okidata printers and terminals connected to Compaq servers running &lt;a href=&#34;https://en.wikipedia.org/wiki/Santa_Cruz_Operation&#34; target=&#34;_blank&#34;&gt;SCO UNIX&lt;/a&gt;.  On the job training took place after I showed up at the site with replacement equipment and swapped it out.  Only then was I allowed to call the &amp;ldquo;gurus&amp;rdquo;, Senior Support Engineers, who would walk me through all the commands necessary to allow them remote access via the modem.  Sometimes the engineers were patient and happy to educate me on what exactly the commands did.  I took those opportunities to learn what I could so that I might be able to solve the problems before calling them next time.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
