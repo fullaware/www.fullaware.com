@@ -16,21 +16,25 @@
 
 
 
-<title>Vmware - Full Aware</title>
+<title>MongoDB Proper Kubernetes installation with Helm - Full Aware</title>
 
 
 <meta name="author" content="Full Aware" />
 
 
 
-<link rel="alternate" type="application/rss+xml" href="http://www.fullaware.com/tags/vmware/index.xml" title="Full Aware" />
+<meta name="keywords" content="mongodb, k8s" />
 
-<meta property="og:title" content="Vmware" />
-<meta name="twitter:title" content="Vmware" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://www.fullaware.com/tags/vmware/" /><meta property="og:image" content="http://www.fullaware.com/img/og.png" />
+
+<meta property="og:title" content="MongoDB Proper Kubernetes installation with Helm" />
+<meta name="twitter:title" content="MongoDB Proper Kubernetes installation with Helm" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.fullaware.com/posts/20240417-mongodbhelm/" /><meta property="og:description" content="Overview
+In a previous post I created my own MongoDB deployment and installed with Kustomize.  Let&rsquo;s use the &ldquo;official&rdquo; Bitnami Helm Chart to install MongoDB." />
+<meta name="twitter:description" content="Overview
+In a previous post I created my own MongoDB deployment and installed with Kustomize.  Let&rsquo;s use the &ldquo;official&rdquo; Bitnami Helm Chart to install MongoDB." /><meta property="og:image" content="http://www.fullaware.com/img/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="http://www.fullaware.com/img/og.png" /><meta property="og:updated_time" content="2022-12-29T00:00:00+00:00" />
+<meta name="twitter:image" content="http://www.fullaware.com/img/og.png" /><meta property="article:published_time" content="2024-04-17T09:59:03-04:00" /><meta property="article:modified_time" content="2024-04-17T09:59:03-04:00" />
 
 
 <style>
@@ -93,30 +97,34 @@
             
             <div class="col-12 col-md-9 float-left content">
                 
-
-<div class="page-info">
-  <span>Posts with the tag Vmware: </span>
-</div>
-
-
-
-<div class="post">
-  <h2 class="post-item post-title">
-    <a href="http://www.fullaware.com/posts/20221229-homelab/">Homelab</a>
-  </h2>
-  <div class="post-item post-meta">
-    <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-12-29</span>
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="http://www.fullaware.com/posts/20240417-mongodbhelm/">MongoDB Proper Kubernetes installation with Helm</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2024-04-17</span>
 
 
 
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/homelab">homelab</a>&nbsp;<a href="/tags/vmware">vmware</a>&nbsp;</span>
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/mongodb">mongodb</a>&nbsp;<a href="/tags/k8s">k8s</a>&nbsp;</span>
 
-  </div>
-  <div class="post-item post-summary markdown-body">
-    <h2 id="objective">Objective</h2>
-<p>To have a single server with enough power to run nested vSphere 8 and Tanzu Kubernetes Grid with NSX.  But with vSphere 8 I wanted to make sure I had something on the <a href="https://www.vmware.com/resources/compatibility/detail.php?deviceCategory=server&amp;productid=42895" target="_blank">HCL</a>.  Dell PowerEdge R740 will carry the homelab moving forward.</p>
-  </div>
-</div>
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h1 id="overview">Overview</h1>
+<p>In a previous post I created my own MongoDB deployment and installed with Kustomize.  Let&rsquo;s use the &ldquo;official&rdquo; Bitnami Helm Chart to install MongoDB.</p>
+<p>This installs MongoDB as a standalone (NO High Availability) node.  For my purpose I&rsquo;m also making it a statefulset so my backup scripts work the same regardless if the architecture is <code>standalone</code> or <code>replicaset</code>.</p>
+<pre><code>helm install mongodb-ce oci://registry-1.docker.io/bitnamicharts/mongodb -n mongodb-ce --create-namespace \
+--set architecture=standalone \
+--set useStatefulSet=true \
+--set service.type=LoadBalancer \
+--set auth.rootUser=&quot;root&quot; \
+--set auth.rootPassword=&quot;Candy123&quot;
+</code></pre>
+    </div>
+</article>
+
 
 
 
@@ -191,8 +199,6 @@
             
         </div>
     </div>
-    
-    
     
 </aside>
 
@@ -279,6 +285,8 @@
             
         </div>
     </div>
+    
+    
     
     
   </div>

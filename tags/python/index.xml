@@ -10,9 +10,9 @@
     <atom:link href="http://www.fullaware.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Get location information by IP address</title>
-      <link>http://www.fullaware.com/posts/locationbyip/</link>
+      <link>http://www.fullaware.com/posts/20240226-locationbyip/</link>
       <pubDate>Mon, 26 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://www.fullaware.com/posts/locationbyip/</guid>
+      <guid>http://www.fullaware.com/posts/20240226-locationbyip/</guid>
       <description>&lt;p&gt;Author &lt;a href=&#34;https://www.freecodecamp.org/news/author/ashutoshkrris/&#34; target=&#34;_blank&#34;&gt;Ashutosh Krishna&lt;/a&gt; created the following post that easily illustrates how to gather location information by IP address using Python.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.freecodecamp.org/news/how-to-get-location-information-of-ip-address-using-python/&#34; target=&#34;_blank&#34;&gt;https://www.freecodecamp.org/news/how-to-get-location-information-of-ip-address-using-python/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

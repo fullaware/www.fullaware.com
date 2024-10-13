@@ -10,51 +10,51 @@
     <atom:link href="http://www.fullaware.com/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to structure ArgoCD</title>
-      <link>http://www.fullaware.com/posts/argocdappsets/</link>
+      <link>http://www.fullaware.com/posts/20240627-argocdappsets/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://www.fullaware.com/posts/argocdappsets/</guid>
+      <guid>http://www.fullaware.com/posts/20240627-argocdappsets/</guid>
       <description>&lt;p&gt;This is a great reference for understanding the App of Apps model for deployment with ArgoCD.  &lt;a href=&#34;https://codefresh.io/blog/how-to-structure-your-argo-cd-repositories-using-application-sets/&#34; target=&#34;_blank&#34;&gt;How to Structure Your Argo CD Repositories Using Application Sets&lt;/a&gt; post by &lt;a href=&#34;https://codefresh.io/author/kostiscodefresh-io/&#34; target=&#34;_blank&#34;&gt;Kostis Kapelonis&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Managing multiple Kubernetes contexts</title>
-      <link>http://www.fullaware.com/posts/k8scontexts/</link>
+      <link>http://www.fullaware.com/posts/20240422-k8scontexts/</link>
       <pubDate>Mon, 22 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://www.fullaware.com/posts/k8scontexts/</guid>
+      <guid>http://www.fullaware.com/posts/20240422-k8scontexts/</guid>
       <description>&lt;p&gt;Keep all INDIVIDUAL kubeconfig.yaml files under &lt;code&gt;.kube/contexts&lt;/code&gt;&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;.kube/contexts&#xA;├── k8scluster1.yaml&#xA;└── k8scluster2.yaml&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Then put the following line in your &lt;code&gt;.bashrc&lt;/code&gt; (Linux) or &lt;code&gt;.bash_profile&lt;/code&gt; (MacOS)&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;export KUBECONFIG=${HOME}/.kube/config:$(for YAML in $(find ${HOME}/.kube/contexts -name &#39;*.yaml&#39;) ; do echo -n &amp;quot;:${YAML}&amp;quot;; done)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>MongoDB Proper Kubernetes installation with Helm</title>
-      <link>http://www.fullaware.com/posts/mongodbhelm/</link>
+      <link>http://www.fullaware.com/posts/20240417-mongodbhelm/</link>
       <pubDate>Wed, 17 Apr 2024 09:59:03 -0400</pubDate>
-      <guid>http://www.fullaware.com/posts/mongodbhelm/</guid>
+      <guid>http://www.fullaware.com/posts/20240417-mongodbhelm/</guid>
       <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;In a previous post I created my own MongoDB deployment and installed with Kustomize.  Let&amp;rsquo;s use the &amp;ldquo;official&amp;rdquo; Bitnami Helm Chart to install MongoDB.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Complexity kills</title>
-      <link>http://www.fullaware.com/posts/complexitykills/</link>
+      <link>http://www.fullaware.com/posts/20231225-complexitykills/</link>
       <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.fullaware.com/posts/complexitykills/</guid>
+      <guid>http://www.fullaware.com/posts/20231225-complexitykills/</guid>
       <description>&lt;p&gt;Before designing your next microservices architecture, consider this brilliant post by Andrei Taranchenko &lt;a href=&#34;https://renegadeotter.com/2023/09/10/death-by-a-thousand-microservices&#34; target=&#34;_blank&#34;&gt;Death by a Thousand Microservices&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>MongoDB Kubernetes Deployment</title>
-      <link>http://www.fullaware.com/posts/k8smongodb/</link>
+      <link>http://www.fullaware.com/posts/20230221-k8smongodb/</link>
       <pubDate>Tue, 21 Feb 2023 20:30:43 -0500</pubDate>
-      <guid>http://www.fullaware.com/posts/k8smongodb/</guid>
+      <guid>http://www.fullaware.com/posts/20230221-k8smongodb/</guid>
       <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;While writing &lt;a href=&#34;https://www.fullaware.com/posts/mongodbtags/&#34; target=&#34;_blank&#34;&gt;Tagging Asteroids with MongoDB&lt;/a&gt; I was able to quickly provision a cluster on the free tier of &lt;a href=&#34;https://www.mongodb.com/atlas/database&#34; target=&#34;_blank&#34;&gt;MongoDB Atlas&lt;/a&gt;. What I originally wanted was to quickly stand up a MongoDB instance in my Kubernetes environment but found most documentation too complex for my usecase.  Just give me a MongoDB &amp;ldquo;dialtone&amp;rdquo; as quickly as possible without having to install the binaries on my system.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pi-Hole Wildcard DNS</title>
-      <link>http://www.fullaware.com/posts/piholewildcarddns/</link>
+      <link>http://www.fullaware.com/posts/20221230-piholewildcarddns/</link>
       <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://www.fullaware.com/posts/piholewildcarddns/</guid>
+      <guid>http://www.fullaware.com/posts/20221230-piholewildcarddns/</guid>
       <description>&lt;p&gt;In order to access Kubernetes applications via my ingress &lt;a href=&#34;https://projectcontour.io&#34; target=&#34;_blank&#34;&gt;projectcontour.io&lt;/a&gt;, I&amp;rsquo;ll use a wildcard DNS entry.&lt;/p&gt;&#xA;&lt;p&gt;Unfortunately this isn&amp;rsquo;t a simple entry in the web UI for Pi-hole (yet?).  A quick search and &lt;a href=&#34;https://brandonrozek.com/blog/wildcarddomainspihole/&#34; target=&#34;_blank&#34;&gt;Brandon Rozek&lt;/a&gt; had documented the steps to add a wildcard DNS entry in &lt;code&gt;dnsmasq&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>K8s Waiting for Condition=Available=True</title>
-      <link>http://www.fullaware.com/posts/k8s-wait/</link>
+      <link>http://www.fullaware.com/posts/20221224-k8s-wait/</link>
       <pubDate>Sat, 24 Dec 2022 10:17:05 -0500</pubDate>
-      <guid>http://www.fullaware.com/posts/k8s-wait/</guid>
+      <guid>http://www.fullaware.com/posts/20221224-k8s-wait/</guid>
       <description>&lt;p&gt;While working with Ansible for standing up a vanilla Kubernetes 1.25.5 cluster I found myself separating the the initial bootstrapping of the cluster, which includes intalling the CNI &lt;code&gt;antrea&lt;/code&gt; from the rest of the configuration (&lt;code&gt;metrics&lt;/code&gt;,&lt;code&gt;metallb&lt;/code&gt;,&lt;code&gt;contour&lt;/code&gt;) due to waiting for &lt;code&gt;antrea&lt;/code&gt; to become Ready.&lt;/p&gt;</description>
     </item>
   </channel>

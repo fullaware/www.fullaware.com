@@ -10,9 +10,9 @@
     <atom:link href="http://www.fullaware.com/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Homelab</title>
-      <link>http://www.fullaware.com/posts/homelab/</link>
+      <link>http://www.fullaware.com/posts/20221229-homelab/</link>
       <pubDate>Thu, 29 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://www.fullaware.com/posts/homelab/</guid>
+      <guid>http://www.fullaware.com/posts/20221229-homelab/</guid>
       <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;&#xA;&lt;p&gt;To have a single server with enough power to run nested vSphere 8 and Tanzu Kubernetes Grid with NSX.  But with vSphere 8 I wanted to make sure I had something on the &lt;a href=&#34;https://www.vmware.com/resources/compatibility/detail.php?deviceCategory=server&amp;amp;productid=42895&#34; target=&#34;_blank&#34;&gt;HCL&lt;/a&gt;.  Dell PowerEdge R740 will carry the homelab moving forward.&lt;/p&gt;</description>
     </item>
   </channel>
