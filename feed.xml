@@ -1,0 +1,157 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://www.fullaware.com/</id>
+  <title>Full Aware</title>
+  <subtitle>AI consulting, education, development</subtitle>
+  <updated>2024-12-22T21:00:46-05:00</updated>
+  <author>
+    <name>Full Aware</name>
+    <uri>https://www.fullaware.com/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://www.fullaware.com/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://www.fullaware.com/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
+  <rights> © 2024 Full Aware </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>How to structure ArgoCD</title>
+    <link href="https://www.fullaware.com/posts/argocdappsets/" rel="alternate" type="text/html" title="How to structure ArgoCD" />
+    <published>2024-06-27T00:00:00-04:00</published>
+  
+    <updated>2024-12-22T20:52:25-05:00</updated>
+  
+    <id>https://www.fullaware.com/posts/argocdappsets/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/argocdappsets/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+    <category term="GitOps" />
+    
+  
+
+  <summary>This is a great reference for understanding the App of Apps model for deployment with ArgoCD.  How to Structure Your Argo CD Repositories Using Application Sets post by Kostis Kapelonis</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Managing multiple Kubernetes contexts</title>
+    <link href="https://www.fullaware.com/posts/k8scontexts/" rel="alternate" type="text/html" title="Managing multiple Kubernetes contexts" />
+    <published>2024-04-22T00:00:00-04:00</published>
+  
+    <updated>2024-12-22T20:52:25-05:00</updated>
+  
+    <id>https://www.fullaware.com/posts/k8scontexts/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/k8scontexts/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+    <category term="DevOps" />
+    
+  
+
+  <summary>Keep all INDIVIDUAL kubeconfig.yaml files under .kube/contexts
+
+.kube/contexts
+├── k8scluster1.yaml
+└── k8scluster2.yaml
+
+
+Then put the following line in your .bashrc (Linux) or .bash_profile (MacOS)
+
+export KUBECONFIG=${HOME}/.kube/config:$(for YAML in $(find ${HOME}/.kube/contexts -name &amp;#39;*.yaml&amp;#39;) ; do echo -n &amp;quot;:${YAML}&amp;quot;; done)</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>MongoDB Proper Kubernetes installation with Helm</title>
+    <link href="https://www.fullaware.com/posts/mongodbhelm/" rel="alternate" type="text/html" title="MongoDB Proper Kubernetes installation with Helm" />
+    <published>2024-04-17T09:59:03-04:00</published>
+  
+    <updated>2024-12-22T20:52:25-05:00</updated>
+  
+    <id>https://www.fullaware.com/posts/mongodbhelm/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/mongodbhelm/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+    <category term="DevOps" />
+    
+  
+
+  <summary>Overview
+In a previous post I created my own MongoDB deployment and installed with Kustomize.  Let’s use the “official” Bitnami Helm Chart to install MongoDB.
+
+This installs MongoDB as a standalone (NO High Availability) node.  For my purpose I’m also making it a statefulset so my backup scripts work the same regardless if the architecture is standalone or replicaset.
+
+helm install mongodb-ce o...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Get location information by IP address</title>
+    <link href="https://www.fullaware.com/posts/locationbyip/" rel="alternate" type="text/html" title="Get location information by IP address" />
+    <published>2024-02-26T00:00:00-05:00</published>
+  
+    <updated>2024-12-22T20:52:25-05:00</updated>
+  
+    <id>https://www.fullaware.com/posts/locationbyip/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/locationbyip/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+  
+
+  <summary>Author Ashutosh Krishna created the following post that easily illustrates how to gather location information by IP address using Python.
+
+https://www.freecodecamp.org/news/how-to-get-location-information-of-ip-address-using-python/</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Complexity kills</title>
+    <link href="https://www.fullaware.com/posts/complexitykills/" rel="alternate" type="text/html" title="Complexity kills" />
+    <published>2023-12-25T00:00:00-05:00</published>
+  
+    <updated>2024-12-22T20:52:25-05:00</updated>
+  
+    <id>https://www.fullaware.com/posts/complexitykills/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/complexitykills/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+  
+
+  <summary>Before designing your next microservices architecture, consider this brilliant post by Andrei Taranchenko Death by a Thousand Microservices</summary>
+
+  </entry>
+
+</feed>
+
+
