@@ -4,7 +4,7 @@
   <id>https://www.fullaware.com/</id>
   <title>Full Aware</title>
   <subtitle>Consulting, education, development</subtitle>
-  <updated>2024-12-29T09:54:06-05:00</updated>
+  <updated>2025-03-09T20:41:57-04:00</updated>
   <author>
     <name>Full Aware</name>
     <uri>https://www.fullaware.com/</uri>
@@ -13,10 +13,41 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="https://www.fullaware.com/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
-  <rights> © 2024 Full Aware </rights>
+  <rights> © 2025 Full Aware </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Asteroid Mining with LLMs</title>
+    <link href="https://www.fullaware.com/posts/asteroidminingllms/" rel="alternate" type="text/html" title="Asteroid Mining with LLMs" />
+    <published>2025-03-09T00:00:00-05:00</published>
+  
+    <updated>2025-03-09T00:00:00-05:00</updated>
+  
+    <id>https://www.fullaware.com/posts/asteroidminingllms/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/asteroidminingllms/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+  
+
+  <summary>Asteroid mining is hard, it is harder if you cannot find what you are looking for. We are going to use low power hardware (M2 Pro 16GB 512GB) to run a Large Language Model, IBM granite3.1-dense:8b, via Ollama to classify asteroids and elements so that we can easily answer the following question.
+
+
+
+How much is an asteroid worth?
+
+
+Based on it’s class, it will likely contain certain elements.  S...</summary>
+
+  </entry>
 
   
   <entry>
@@ -127,28 +158,6 @@ helm install mongodb-ce o...</summary>
   <summary>Author Ashutosh Krishna created the following post that easily illustrates how to gather location information by IP address using Python.
 
 https://www.freecodecamp.org/news/how-to-get-location-information-of-ip-address-using-python/</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Complexity kills</title>
-    <link href="https://www.fullaware.com/posts/complexitykills/" rel="alternate" type="text/html" title="Complexity kills" />
-    <published>2023-12-25T00:00:00-05:00</published>
-  
-    <updated>2024-12-22T20:52:25-05:00</updated>
-  
-    <id>https://www.fullaware.com/posts/complexitykills/</id>
-    <content type="text/html" src="https://www.fullaware.com/posts/complexitykills/" />
-    <author>
-      <name>Full Aware</name>
-    </author>
-
-  
-    
-  
-
-  <summary>Before designing your next microservices architecture, consider this brilliant post by Andrei Taranchenko Death by a Thousand Microservices</summary>
 
   </entry>
 

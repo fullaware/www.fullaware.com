@@ -30,23 +30,23 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Homelab" />
+<meta property="og:title" content="Asteroid Mining with LLMs" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Objective To have a single server with enough power to run nested vSphere 8 and Tanzu Kubernetes Grid with NSX. But with vSphere 8 I wanted to make sure I had something on the HCL. Dell PowerEdge R740 will carry the homelab moving forward." />
-<meta property="og:description" content="Objective To have a single server with enough power to run nested vSphere 8 and Tanzu Kubernetes Grid with NSX. But with vSphere 8 I wanted to make sure I had something on the HCL. Dell PowerEdge R740 will carry the homelab moving forward." />
-<link rel="canonical" href="https://www.fullaware.com/posts/homelab/" />
-<meta property="og:url" content="https://www.fullaware.com/posts/homelab/" />
+<meta name="description" content="Asteroid mining is hard, it is harder if you cannot find what you are looking for. We are going to use low power hardware (M2 Pro 16GB 512GB) to run a Large Language Model, IBM granite3.1-dense:8b, via Ollama to classify asteroids and elements so that we can easily answer the following question." />
+<meta property="og:description" content="Asteroid mining is hard, it is harder if you cannot find what you are looking for. We are going to use low power hardware (M2 Pro 16GB 512GB) to run a Large Language Model, IBM granite3.1-dense:8b, via Ollama to classify asteroids and elements so that we can easily answer the following question." />
+<link rel="canonical" href="https://www.fullaware.com/posts/asteroidminingllms/" />
+<meta property="og:url" content="https://www.fullaware.com/posts/asteroidminingllms/" />
 <meta property="og:site_name" content="Full Aware" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-12-29T00:00:00-05:00" />
+<meta property="article:published_time" content="2025-03-09T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Homelab" />
+<meta property="twitter:title" content="Asteroid Mining with LLMs" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-12-22T20:52:25-05:00","datePublished":"2022-12-29T00:00:00-05:00","description":"Objective To have a single server with enough power to run nested vSphere 8 and Tanzu Kubernetes Grid with NSX. But with vSphere 8 I wanted to make sure I had something on the HCL. Dell PowerEdge R740 will carry the homelab moving forward.","headline":"Homelab","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.fullaware.com/posts/homelab/"},"url":"https://www.fullaware.com/posts/homelab/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-09T00:00:00-05:00","datePublished":"2025-03-09T00:00:00-05:00","description":"Asteroid mining is hard, it is harder if you cannot find what you are looking for. We are going to use low power hardware (M2 Pro 16GB 512GB) to run a Large Language Model, IBM granite3.1-dense:8b, via Ollama to classify asteroids and elements so that we can easily answer the following question.","headline":"Asteroid Mining with LLMs","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.fullaware.com/posts/asteroidminingllms/"},"url":"https://www.fullaware.com/posts/asteroidminingllms/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Homelab | Full Aware
+  <title>Asteroid Mining with LLMs | Full Aware
   </title>
 
   <!--
@@ -439,7 +439,7 @@
         
           
             
-              <span>Homelab</span>
+              <span>Asteroid Mining with LLMs</span>
             
 
           
@@ -592,6 +592,49 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
@@ -619,7 +662,7 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>Homelab</h1>
+    <h1 data-toc-skip>Asteroid Mining with LLMs</h1>
     
 
     <div class="post-meta text-muted">
@@ -636,41 +679,18 @@
 
 <time
   
-  data-ts="1672290000"
+  data-ts="1741496400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Dec 29, 2022
+  Mar  9, 2025
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1734918745"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Dec 22, 2024
-</time>
-
-        </span>
       
 
       
@@ -714,9 +734,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="317 words"
+  title="887 words"
 >
-  <em>1 min</em> read</span>
+  <em>4 min</em> read</span>
 
         </div>
       </div>
@@ -725,7 +745,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">Homelab</span>
+      <span class="label text-truncate">Asteroid Mining with LLMs</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -738,7 +758,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">Homelab</div>
+        <div class="label text-truncate py-2 ms-4">Asteroid Mining with LLMs</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -748,75 +768,176 @@
   
 
   <div class="content">
-    <h2 id="objective"><span class="me-2">Objective</span><a href="#objective" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>To have a single server with enough power to run nested vSphere 8 and Tanzu Kubernetes Grid with NSX.  But with vSphere 8 I wanted to make sure I had something on the <a href="https://www.vmware.com/resources/compatibility/detail.php?deviceCategory=server&amp;productid=42895">HCL</a>.  Dell PowerEdge R740 will carry the homelab moving forward.
-<!--more--></p>
+    <p>Asteroid mining is hard, it is harder if you cannot find what you are looking for. We are going to use low power hardware (<a href="https://support.apple.com/en-us/111837">M2 Pro 16GB 512GB</a>) to run a Large Language Model, <a href="https://www.ollama.com/library/granite3.1-dense">IBM granite3.1-dense:8b</a>, via <a href="https://ollama.com">Ollama</a> to classify asteroids and elements so that we can easily answer the following question.</p>
 
-<h2 id="hardware"><span class="me-2">Hardware</span><a href="#hardware" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<!--more-->
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>How much is an asteroid worth?
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Based on it’s class, it will likely contain certain elements.  Some M (Metallic) class asteroids are known to have high concentrations of <a href="https://en.wikipedia.org/wiki/Platinum_group">platinum group metals</a>. Platinums value is over <a href="https://finance.yahoo.com/quote/PL=F/">$900+ per oz</a>!  To keep life simple I will be measuring all mining quantities in kilograms.  <code class="language-plaintext highlighter-rouge">35.27 oz in 1 kg. $900 x 35.27 oz = $31,743 per kg of platinum</code>. It’s trading far above $900 at this moment so let’s round up to $32k per 1 kg of Platinum.</p>
+
+<h3 id="classifying-asteroids"><span class="me-2">Classifying Asteroids</span><a href="#classifying-asteroids" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>With a collection of <a href="https://www.kaggle.com/datasets/sakhawat18/asteroid-dataset">958524 asteroids, thanks to https://www.kaggle.com/datasets/sakhawat18/asteroid-dataset</a>, it is important for my use case that they have a <code class="language-plaintext highlighter-rouge">class</code> of either <code class="language-plaintext highlighter-rouge">C</code> (Carbonaceous), <code class="language-plaintext highlighter-rouge">S</code> (Silicaceous), <code class="language-plaintext highlighter-rouge">M</code> (Metallic), or <code class="language-plaintext highlighter-rouge">O</code> (Other, unclassified).</p>
+
+<h3 id="element-uses"><span class="me-2">Element Uses</span><a href="#element-uses" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>119 Elements in the periodic table, we have all the information you could imagine on elements thanks to <a href="https://github.com/Bowserinator/Periodic-Table-JSON">https://github.com/Bowserinator/Periodic-Table-JSON</a>.</p>
+
+<p>I wanted to know what usecases each element could be used for in the context of “benefits space exploration”. 12 usecases that could easily overlap several of the 119 elements.</p>
+
+<p><code class="language-plaintext highlighter-rouge">"fuel", "lifesupport", "energystorage", "construction", "electronics", "coolants", "industrial", "medical", "propulsion", "shielding", "agriculture", "mining"</code></p>
+
+<p>I also wanted to show the likelihood of each element appearing in each class of asteroid [<code class="language-plaintext highlighter-rouge">C</code>, <code class="language-plaintext highlighter-rouge">S</code>, and <code class="language-plaintext highlighter-rouge">M</code>]. I used Pydantic and Ollama to read each element and update its document with its uses and classes.</p>
+
+<p>For instance <code class="language-plaintext highlighter-rouge">Hydrogen</code> now has the following fields:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="rouge-code"><pre>"uses": [
+    "fuel",
+    "energystorage",
+    "industrial",
+    "propulsion"
+  ],
+"classes": [
+    {
+      "class": "C",
+      "percentage": 60
+    },
+    {
+      "class": "S",
+      "percentage": 35
+    },
+    {
+      "class": "M",
+      "percentage": 5
+    }
+  ]
+</pre></td></tr></tbody></table></code></div></div>
+
+<h1 id="lets-go-hunting">Let’s go hunting!</h1>
+
 <ul>
-  <li>Dell PowerEdge R740
-    <ul>
-      <li>2 x Intel Xeon Gold 6132 2.6Ghz 14-Core</li>
-      <li>256GB RAM - 8 x 32GB 2400T DDR4 ECC</li>
-      <li>H730p 2gb Cache Raid Controller PCIe</li>
-      <li>2x 1TB SSD in Raid 1 (Samsung 850)</li>
-      <li>Broadcom 2x 10Gbe SFP / 2x 1Gbe Network Daughter Card (165T0)</li>
-      <li>iDrac 9 Enterprise</li>
-      <li>2x 750w Platinum Power Supplies</li>
-      <li>SABRENT NVMe M.2 SSD to PCIe Riser <a href="https://www.amazon.com/gp/product/B084GDY2PW/"> https://www.amazon.com/gp/product/B084GDY2PW/</a></li>
-      <li>WD_BLACK 2TB SN770 NVMe <a href="https://www.amazon.com/gp/product/B09QV5KJHV">https://www.amazon.com/gp/product/B09QV5KJHV</a></li>
-    </ul>
+  <li>Find the asteroid(s) closest to Earth measured in <a href="https://en.wikipedia.org/wiki/Astronomical_unit">Astronomical Units</a></li>
+  <li>Estimate it’s value</li>
+  <li>Flight plan - estimate the total number of days to intersect, days to establish site, days to fill cargo to capacity, days to return (considering additional mass)</li>
+  <li>Based on the value of the elements x capacity of cargo = mission value</li>
+  <li>Send ship, survive, return with valuable resources, get paid.</li>
+</ul>
+
+<h2 id="where-are-you-au"><span class="me-2">Where are you? [AU]</span><a href="#where-are-you-au" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Key to finding anything in space is finding it’s relation to something significant, like our SUN. The distance from Earth to the Sun is 1 Astronomical Unit. Each asteroid has a <code class="language-plaintext highlighter-rouge">moid</code> field which stands for <a href="https://en.wikipedia.org/wiki/Minimum_orbit_intersection_distance">minimum orbital intersection distance measured in Astronomical Units</a> aka closest distance between the asteroid and Earth.</p>
+
+<p>For instance <code class="language-plaintext highlighter-rouge">Ceres</code> has a <code class="language-plaintext highlighter-rouge">moid</code> of <code class="language-plaintext highlighter-rouge">1.59478</code> AU.  1 AU is 149,597,871 km, so <code class="language-plaintext highlighter-rouge">Ceres</code> is 238,575,692 km from Earth at its closest point.</p>
+
+<p>With the absolute latest in human engineering it’s possible to get from <a href="https://www.iflscience.com/nuclear-thermal-propulsion-reactor-fuel-that-could-take-humans-to-mars-tested-at-nasa-facility-77719">Earth to Mars in 45 days</a>. The distance from Earth to Mars is 0.52 AU or 78,340,000 km. <code class="language-plaintext highlighter-rouge">78,340,000 km / 45 days =
+1,740,889 km per day or 72,537 km per hour</code>.</p>
+
+<p>This means it would take us 137 days to get to the asteroid <code class="language-plaintext highlighter-rouge">Ceres</code>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">238,575,692 km to Ceres / 1,740,889 km per day = 137 days</code></p>
+
+<h2 id="mine-all-mine"><span class="me-2">Mine, all mine</span><a href="#mine-all-mine" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Due to <code class="language-plaintext highlighter-rouge">Ceres</code> size, it is fair to say that multiple mining sites could exist over this 939.4 km diameter asteroid.  It’s mass is estimated to be 938,390,000,000,000,000,000 kg.</p>
+
+<h2 id="dig-it"><span class="me-2">Dig it</span><a href="#dig-it" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>We are going to estimate our mining ship can extract 10,000 kg of material per hour or 240,000 kg of material per day based on <a href="https://www.eia.gov/coal/annual/pdf/tableES2.pdf">published surface mining data</a>.  In mining, <strong>gangue</strong> is the commercially worthless material that surrounds, or is closely mixed with, a wanted mineral in an ore deposit.  For example, say you have 10,000 kg of rock you have mined for platinum that has an ore grade of 10%. This means you only get 1,000 kg of platinum and 9,000 kg of gangue that you have to separate and get rid of (10% platinum ore would be very high grade).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>24,000 kg per day of useful elements if all goes well.
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="logistics-and-costs"><span class="me-2">Logistics and costs</span><a href="#logistics-and-costs" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>The <a href="https://en.wikipedia.org/wiki/Falcon_Heavy">Falcon Heavy</a> can lift 9,200 kg into space. We will be rounding that up to 10,000 kg. That’s $320 million dollars in platinum.</p>
+
+<p>The Falcon Heavy has 2 costs models;</p>
+<ul>
+  <li>Reusable: US $97 million</li>
+  <li>Expendable: US$150 million</li>
+</ul>
+
+<p>If your ship + cargo makes it back, great (minus several million in repairs)!  If it doesn’t, it’s going to cost $150 million to try again.</p>
+
+<h3 id="operational-costs-per-day"><span class="me-2">Operational costs per day</span><a href="#operational-costs-per-day" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<ul>
+  <li>
+    <p>137 days to Ceres.</p>
   </li>
-  <li>Dell PowerEdge R720
-    <ul>
-      <li>2 x Intel(R) Xeon(R) CPU E5-2640 6-Core</li>
-      <li>128GB RAM - 16 x 8GB ECC PC3-12800 1333Mhz</li>
-      <li>Replaced PERC 310 RAID Controller with LSI SAS 2008 flashed to IT mode.</li>
-      <li>Replaced DVD with Samsung SSD 860 EVO 500GB, used as boot drive <a href="https://www.youtube.com/watch?v=Nx9-BK0WsxU">https://www.youtube.com/watch?v=Nx9-BK0WsxU</a></li>
-    </ul>
+  <li>
+    <p>3 days to establish mining site.</p>
+  </li>
+  <li>
+    <p>1 day to mine.</p>
+  </li>
+  <li>
+    <p>1 day to prep for return.</p>
+  </li>
+  <li>
+    <p>137 days to Earth.</p>
   </li>
 </ul>
 
-<h2 id="software"><span class="me-2">Software</span><a href="#software" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p><a href="https://www.vmug.com/membership/vmug-advantage-membership/">VMware vSphere 8</a> Licenses provided by VMUG Advantage membership</p>
+<p>Piloted by 3 AIs to form a quorum will help ensure mission success. Each specializing in specific fields;</p>
+<ul>
+  <li>non-terrestrial mining operations</li>
+  <li>astral navigation</li>
+  <li>resource management</li>
+</ul>
 
-<h2 id="configuration-of-r720"><span class="me-2">Configuration of R720</span><a href="#configuration-of-r720" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>$45,000 per day based on a $16M+ annual run rate.  Play with those numbers as you would like.  279 days @ $45K per day is $12.5M total mission operational costs.</p>
 
-<ol>
-  <li>Install ESXi 8 to 500GB SSD on R720.
-    <ul>
-      <li>YES I received the warning regarding unsupported CPU.  This has yet to keep me from using vSphere 8 on this server.  I did have to get creative with storage since my LSI2008 or PERC 310 aren’t supported.</li>
-      <li>After installation I had 337.5GB for <code class="language-plaintext highlighter-rouge">Datastore1</code> which I renamed to <code class="language-plaintext highlighter-rouge">local_ssd500GB</code> and have so far managed to squeeze 9 VMs onto it thanks to thin provisioning.</li>
-    </ul>
-  </li>
-  <li>Install pi-hole on Ubuntu 22.04 LTS VM
-    <ul>
-      <li><a href="https://www.youtube.com/watch?v=FnFtWsZ8IP0">Configure pi-hole</a> with <a href="https://docs.pi-hole.net/guides/dns/unbound/">recursive DNS</a> and add DNS entries for vCenter vm.</li>
-    </ul>
-  </li>
-  <li>Install vCenter</li>
-  <li>Enable PCIPassthrough for SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon]</li>
-  <li><a href="https://www.truenas.com/docs/solutions/integrations/vmware/deploytninvmware/">Install TrueNAS Core</a> as a VM
-    <ul>
-      <li>Add SAS2008 HBA to VM as additional PCI device</li>
-      <li>Add drives to be used as <a href="https://www.servethehome.com/building-a-lab-part-3-configuring-vmware-esxi-and-truenas-core/">iSCSI target</a></li>
-    </ul>
-  </li>
-  <li><a href="https://www.infotechram.com/index.php/2022/09/17/how-to-install-esxi-server-8-vsphere-8-as-nested-vm/">Install vSphere 8 as VM</a></li>
-  <li>Provision 4 new Ubuntu Server 22.04 VMs for Kubernetes
-    <ul>
-      <li><a href="https://www.linuxtechi.com/install-kubernetes-on-ubuntu-22-04/">Manual</a></li>
-      <li><a href="https://github.com/fullaware/k8s-iac#installing-kubernetes-2-installk8s">Via Ansible - https://github.com/fullaware/k8s-iac#installing-kubernetes-2-installk8s</a></li>
-    </ul>
-  </li>
-</ol>
+<h2 id="tldr"><span class="me-2">TL;DR</span><a href="#tldr" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p><strong>$150M</strong> to launch, $50 million saved if you can reuse it for future missions.</p>
 
-<h2 id="configuration-of-r740-coming-soon"><span class="me-2">Configuration of R740 coming soon</span><a href="#configuration-of-r740-coming-soon" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p><strong>$12.5M</strong> mission operation costs.</p>
+
+<p><strong>$162.5M total investment.</strong></p>
+
+<p><strong>$320M in recovered resources.</strong></p>
+
+<h1 id="1575m-in-profits">$157.5M in profits</h1>
+
+<p>Take that and invest in a 2nd shuttle. Repeat as needed.</p>
 
   </div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/development/">Development</a>
+      </div>
     
 
     <!-- tags -->
@@ -825,14 +946,14 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/homelab/"
+            href="/tags/mongodb/"
             class="post-tag no-text-decoration"
-          >homelab</a>
+          >mongodb</a>
         
           <a
-            href="/tags/vmware/"
+            href="/tags/llm/"
             class="post-tag no-text-decoration"
-          >vmware</a>
+          >llm</a>
         
       </div>
     
@@ -868,14 +989,14 @@
 
       
 
-      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.fullaware.com%2Fposts%2Fhomelab%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin" aria-label="Linkedin">
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.fullaware.com%2Fposts%2Fasteroidminingllms%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin" aria-label="Linkedin">
         <i class="fa-fw fab fa-linkedin"></i>
       </a>
     
 
       
 
-      <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.fullaware.com%2Fposts%2Fhomelab%2F&title=Homelab%20-%20Full%20Aware" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Reddit" aria-label="Reddit">
+      <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.fullaware.com%2Fposts%2Fasteroidminingllms%2F&title=Asteroid%20Mining%20with%20LLMs%20-%20Full%20Aware" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Reddit" aria-label="Reddit">
         <i class="fa-fw fa-brands fa-square-reddit"></i>
       </a>
     
@@ -1247,19 +1368,55 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -1275,7 +1432,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/piholewildcarddns/" class="post-preview card h-100">
+          <a href="/posts/mongodbhelm/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1287,18 +1444,84 @@
 
 <time
   
-  data-ts="1672376400"
+  data-ts="1713362343"
   data-df="ll"
   
 >
-  Dec 30, 2022
+  Apr 17, 2024
 </time>
 
-              <h4 class="pt-0 my-2">Pi-Hole Wildcard DNS</h4>
+              <h4 class="pt-0 my-2">MongoDB Proper Kubernetes installation with Helm</h4>
               <div class="text-muted">
-                <p>In order to access Kubernetes applications via my ingress projectcontour.io, I’ll use a wildcard DNS entry.
+                <p>Overview
+In a previous post I created my own MongoDB deployment and installed with Kustomize.  Let’s use the “official” Bitnami Helm Chart to install MongoDB.
 
-Unfortunately this isn’t a simple entry in the web UI for Pi-hole (yet?).  A quick searc...</p>
+This installs MongoDB as a standalone...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/k8smongodb/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1677029443"
+  data-df="ll"
+  
+>
+  Feb 21, 2023
+</time>
+
+              <h4 class="pt-0 my-2">MongoDB Kubernetes Deployment</h4>
+              <div class="text-muted">
+                <p>Overview
+While writing Tagging Asteroids with MongoDB I was able to quickly provision a cluster on the free tier of MongoDB Atlas. What I originally wanted was to quickly stand up a MongoDB instanc...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/mongodbtags/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1676437200"
+  data-df="ll"
+  
+>
+  Feb 15, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Tagging Asteroids with MongoDB</h4>
+              <div class="text-muted">
+                <p>Objective
+Let’s use MongoDB to build an asteroid tagging engine that allows us to assign multiple elements to any asteroid then query based on those elements.
+
+
+Schema design
+
+
+
+Arrays allow you to...</p>
               </div>
             </div>
           </a>
@@ -1319,22 +1542,18 @@ Unfortunately this isn’t a simple entry in the web UI for Pi-hole (yet?).  A q
 
   
     <a
-      href="/posts/k8s-wait/"
+      href="/posts/argocdappsets/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>K8s Waiting for Condition=Available=True</p>
+      <p>How to structure ArgoCD</p>
     </a>
   
 
   
-    <a
-      href="/posts/piholewildcarddns/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Pi-Hole Wildcard DNS</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
