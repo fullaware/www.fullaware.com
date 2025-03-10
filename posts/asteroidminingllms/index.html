@@ -42,7 +42,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Asteroid Mining with LLMs" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-10T07:56:16-04:00","datePublished":"2025-03-09T00:00:00-05:00","description":"Asteroid mining is hard, it is harder if you cannot find what you are looking for. We are going to use low power hardware (M2 Pro 16GB 512GB) to run a Large Language Model, IBM granite3.1-dense:8b, via Ollama to classify asteroids and elements so that we can easily answer the following question.","headline":"Asteroid Mining with LLMs","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.fullaware.com/posts/asteroidminingllms/"},"url":"https://www.fullaware.com/posts/asteroidminingllms/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-10T08:48:57-04:00","datePublished":"2025-03-09T00:00:00-05:00","description":"Asteroid mining is hard, it is harder if you cannot find what you are looking for. We are going to use low power hardware (M2 Pro 16GB 512GB) to run a Large Language Model, IBM granite3.1-dense:8b, via Ollama to classify asteroids and elements so that we can easily answer the following question.","headline":"Asteroid Mining with LLMs","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.fullaware.com/posts/asteroidminingllms/"},"url":"https://www.fullaware.com/posts/asteroidminingllms/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -584,6 +584,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -704,7 +715,7 @@
 
 <time
   
-  data-ts="1741607776"
+  data-ts="1741610937"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -757,9 +768,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="902 words"
+  title="1105 words"
 >
-  <em>5 min</em> read</span>
+  <em>6 min</em> read</span>
 
         </div>
       </div>
@@ -885,6 +896,118 @@
 <p>This means it would take us 137 days to get to the asteroid <code class="language-plaintext highlighter-rouge">Ceres</code>.</p>
 
 <p><code class="language-plaintext highlighter-rouge">238,575,692 km to Ceres / 1,740,889 km per day = 137 days</code></p>
+
+<h2 id="turn-class-into-cash"><span class="me-2">Turn Class into Cash</span><a href="#turn-class-into-cash" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p><code class="language-plaintext highlighter-rouge">Ceres</code> is a <code class="language-plaintext highlighter-rouge">C</code> class asteroid. <code class="language-plaintext highlighter-rouge">Hydrogen</code> has a <code class="language-plaintext highlighter-rouge">60</code>% chance of occuring in a <code class="language-plaintext highlighter-rouge">C</code> class asteroid.  What about the other 118 elements?</p>
+
+<p>Now that that we have each of our asteroids and elements properly classified, let’s query them and see how they fit together!</p>
+
+<div class="language-json highlighter-rouge"><div class="code-header">
+        <span data-label-text="JSON"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="rouge-code"><pre><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="err">$match:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="err">full_name:</span><span class="w"> </span><span class="s2">"1 Ceres"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="err">$lookup:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="err">from:</span><span class="w"> </span><span class="s2">"elements"</span><span class="p">,</span><span class="w">
+      </span><span class="err">localField:</span><span class="w"> </span><span class="s2">"class"</span><span class="p">,</span><span class="w">
+      </span><span class="err">foreignField:</span><span class="w"> </span><span class="s2">"classes.class"</span><span class="p">,</span><span class="w">
+      </span><span class="err">as:</span><span class="w"> </span><span class="s2">"elements_info"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="err">$project:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"elements_info.name"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"elements_info.classes"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></pre></td></tr></tbody></table></code></div></div>
+<p>Results in a JSON object representation of the asteroid with all 119 elements embedded.</p>
+
+<div class="language-json highlighter-rouge"><div class="code-header">
+        <span data-label-text="JSON"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="rouge-code"><pre><span class="p">{</span><span class="w">
+  </span><span class="nl">"_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"$oid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"67c8fb9e9b4c595879243f64"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1 Ceres"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"elements_info"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hydrogen"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"classes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"C"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"percentage"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"S"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"percentage"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"percentage"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>In this case, we can estimate that <code class="language-plaintext highlighter-rouge">Hydrogen</code> has a 30% chance to appear in <code class="language-plaintext highlighter-rouge">Ceres</code>.</p>
 
 <h2 id="mine-all-mine"><span class="me-2">Mine, all mine</span><a href="#mine-all-mine" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Due to <code class="language-plaintext highlighter-rouge">Ceres</code> size, it is fair to say that multiple mining sites could exist over this 939.4 km diameter asteroid.  It’s mass is estimated to be 
