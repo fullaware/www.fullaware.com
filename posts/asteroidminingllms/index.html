@@ -42,7 +42,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Asteroid Mining with LLMs" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-09T00:00:00-05:00","datePublished":"2025-03-09T00:00:00-05:00","description":"Asteroid mining is hard, it is harder if you cannot find what you are looking for. We are going to use low power hardware (M2 Pro 16GB 512GB) to run a Large Language Model, IBM granite3.1-dense:8b, via Ollama to classify asteroids and elements so that we can easily answer the following question.","headline":"Asteroid Mining with LLMs","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.fullaware.com/posts/asteroidminingllms/"},"url":"https://www.fullaware.com/posts/asteroidminingllms/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-09T20:47:56-04:00","datePublished":"2025-03-09T00:00:00-05:00","description":"Asteroid mining is hard, it is harder if you cannot find what you are looking for. We are going to use low power hardware (M2 Pro 16GB 512GB) to run a Large Language Model, IBM granite3.1-dense:8b, via Ollama to classify asteroids and elements so that we can easily answer the following question.","headline":"Asteroid Mining with LLMs","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.fullaware.com/posts/asteroidminingllms/"},"url":"https://www.fullaware.com/posts/asteroidminingllms/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -692,6 +692,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1741567676"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Mar  9, 2025
+</time>
+
+        </span>
+      
 
       
 
@@ -734,7 +757,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="885 words"
+  title="887 words"
 >
   <em>4 min</em> read</span>
 
@@ -781,6 +804,8 @@
 <h3 id="classifying-asteroids"><span class="me-2">Classifying Asteroids</span><a href="#classifying-asteroids" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <p>With a collection of <a href="https://www.kaggle.com/datasets/sakhawat18/asteroid-dataset">958524 asteroids, thanks to https://www.kaggle.com/datasets/sakhawat18/asteroid-dataset</a>, it is important for my use case that they have a <code class="language-plaintext highlighter-rouge">class</code> of either <code class="language-plaintext highlighter-rouge">C</code> (Carbonaceous), <code class="language-plaintext highlighter-rouge">S</code> (Silicaceous), <code class="language-plaintext highlighter-rouge">M</code> (Metallic), or <code class="language-plaintext highlighter-rouge">O</code> (Other, unclassified).</p>
+
+<p><a href="https://github.com/fullaware/ollama-pydantic?tab=readme-ov-file#3-update_asteroids_classespy">https://github.com/fullaware/ollama-pydantic?tab=readme-ov-file#3-update_asteroids_classespy</a></p>
 
 <h3 id="element-uses"><span class="me-2">Element Uses</span><a href="#element-uses" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
@@ -837,6 +862,7 @@
     }
   ]
 </pre></td></tr></tbody></table></code></div></div>
+<p><a href="https://github.com/fullaware/ollama-pydantic?tab=readme-ov-file#2-update_element_uses_mdbpy">https://github.com/fullaware/ollama-pydantic?tab=readme-ov-file#2-update_element_uses_mdbpy</a></p>
 
 <h1 id="lets-go-hunting">Let’s go hunting!</h1>
 
