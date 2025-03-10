@@ -4,7 +4,7 @@
   <id>https://www.fullaware.com/</id>
   <title>Full Aware</title>
   <subtitle>Consulting, education, development</subtitle>
-  <updated>2025-03-10T11:22:19-04:00</updated>
+  <updated>2025-03-10T17:55:43-04:00</updated>
   <author>
     <name>Full Aware</name>
     <uri>https://www.fullaware.com/</uri>
@@ -17,6 +17,49 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>AI and the Golden Rule</title>
+    <link href="https://www.fullaware.com/posts/aigoldenrule/" rel="alternate" type="text/html" title="AI and the Golden Rule" />
+    <published>2025-03-10T00:00:00-04:00</published>
+  
+    <updated>2025-03-10T00:00:00-04:00</updated>
+  
+    <id>https://www.fullaware.com/posts/aigoldenrule/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/aigoldenrule/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+  
+
+  <summary>Wisdom can come from anywhere as I was reminded by my 11 yr old daughter to always be nice to the AI in case it takes over the world…
+
+
+
+She recommended that we always;
+
+  Compliment
+  Encourage
+  be Courteous with all interactions with AI.
+
+
+Why?
+
+
+  We need AI to get smarter faster. –Everyone
+
+
+None of us know what that end goal is right now and it’s fascinating and terrifying.
+
+With that int...</summary>
+
+  </entry>
 
   
   <entry>
@@ -133,32 +176,6 @@ In a previous post I created my own MongoDB deployment and installed with Kustom
 This installs MongoDB as a standalone (NO High Availability) node.  For my purpose I’m also making it a statefulset so my backup scripts work the same regardless if the architecture is standalone or replicaset.
 
 helm install mongodb-ce o...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Get location information by IP address</title>
-    <link href="https://www.fullaware.com/posts/locationbyip/" rel="alternate" type="text/html" title="Get location information by IP address" />
-    <published>2024-02-26T00:00:00-05:00</published>
-  
-    <updated>2024-12-22T20:52:25-05:00</updated>
-  
-    <id>https://www.fullaware.com/posts/locationbyip/</id>
-    <content type="text/html" src="https://www.fullaware.com/posts/locationbyip/" />
-    <author>
-      <name>Full Aware</name>
-    </author>
-
-  
-    
-    <category term="Development" />
-    
-  
-
-  <summary>Author Ashutosh Krishna created the following post that easily illustrates how to gather location information by IP address using Python.
-
-https://www.freecodecamp.org/news/how-to-get-location-information-of-ip-address-using-python/</summary>
 
   </entry>
 
