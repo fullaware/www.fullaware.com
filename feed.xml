@@ -4,7 +4,7 @@
   <id>https://www.fullaware.com/</id>
   <title>Full Aware</title>
   <subtitle>Consulting, education, development</subtitle>
-  <updated>2025-03-10T08:48:59-04:00</updated>
+  <updated>2025-03-10T11:04:54-04:00</updated>
   <author>
     <name>Full Aware</name>
     <uri>https://www.fullaware.com/</uri>
@@ -12,7 +12,7 @@
   <link rel="self" type="application/atom+xml" href="https://www.fullaware.com/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="https://www.fullaware.com/"/>
-  <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
   <rights> © 2025 Full Aware </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
@@ -20,55 +20,11 @@
 
   
   <entry>
-    <title>AI and the Golden Rule</title>
-    <link href="https://www.fullaware.com/posts/aikindness/" rel="alternate" type="text/html" title="AI and the Golden Rule" />
-    <published>2025-03-10T00:00:00-04:00</published>
-  
-    <updated>2025-03-10T00:00:00-04:00</updated>
-  
-    <id>https://www.fullaware.com/posts/aikindness/</id>
-    <content type="text/html" src="https://www.fullaware.com/posts/aikindness/" />
-    <author>
-      <name>Full Aware</name>
-    </author>
-
-  
-    
-    <category term="Development" />
-    
-  
-
-  <summary>While working with LLMs I was reminded by my 11 yr old daughter to always be nice to the AI in case it takes over the world…
-
-
-
-She recommended that we always compliment, encourage and be courteous during our interactions with AI.
-
-Pretty please…
-
-Let’s add some encouragement.
-
-
-  “You are doing great!”
-
-
-The following 3 words change a prompt into a kind request.
-
-
-  “Would you please…”
-
-
-Inser...</summary>
-
-  </entry>
-
-  
-  <entry>
     <title>Asteroid Mining with LLMs</title>
     <link href="https://www.fullaware.com/posts/asteroidminingllms/" rel="alternate" type="text/html" title="Asteroid Mining with LLMs" />
     <published>2025-03-09T00:00:00-05:00</published>
   
-    <updated>2025-03-10T08:48:57-04:00</updated>
+    <updated>2025-03-10T11:02:00-04:00</updated>
   
     <id>https://www.fullaware.com/posts/asteroidminingllms/</id>
     <content type="text/html" src="https://www.fullaware.com/posts/asteroidminingllms/" />
@@ -177,6 +133,32 @@ In a previous post I created my own MongoDB deployment and installed with Kustom
 This installs MongoDB as a standalone (NO High Availability) node.  For my purpose I’m also making it a statefulset so my backup scripts work the same regardless if the architecture is standalone or replicaset.
 
 helm install mongodb-ce o...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Get location information by IP address</title>
+    <link href="https://www.fullaware.com/posts/locationbyip/" rel="alternate" type="text/html" title="Get location information by IP address" />
+    <published>2024-02-26T00:00:00-05:00</published>
+  
+    <updated>2024-12-22T20:52:25-05:00</updated>
+  
+    <id>https://www.fullaware.com/posts/locationbyip/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/locationbyip/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+  
+
+  <summary>Author Ashutosh Krishna created the following post that easily illustrates how to gather location information by IP address using Python.
+
+https://www.freecodecamp.org/news/how-to-get-location-information-of-ip-address-using-python/</summary>
 
   </entry>
 
