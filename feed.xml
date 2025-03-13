@@ -4,7 +4,7 @@
   <id>https://www.fullaware.com/</id>
   <title>Full Aware</title>
   <subtitle>Consulting, education, development</subtitle>
-  <updated>2025-03-12T16:20:20-04:00</updated>
+  <updated>2025-03-13T15:39:49-04:00</updated>
   <author>
     <name>Full Aware</name>
     <uri>https://www.fullaware.com/</uri>
@@ -17,6 +17,46 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Fail Fast Schema Design</title>
+    <link href="https://www.fullaware.com/posts/fail-fast-schema-design/" rel="alternate" type="text/html" title="Fail Fast Schema Design" />
+    <published>2025-03-13T00:00:00-04:00</published>
+  
+    <updated>2025-03-13T00:00:00-04:00</updated>
+  
+    <id>https://www.fullaware.com/posts/fail-fast-schema-design/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/fail-fast-schema-design/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+  
+
+  <summary>Asteroids have LOTS of value IF we can get our hands on them.
+
+
+Let’s be honest, nothing is going to sell the general public on asteroid mining like landing a 10,000kg chunk of space gold on this planet.
+
+958524 asteroids in our solarsystem.
+
+119 elements in the periodic table.
+
+5 of those elements are valued commodities;
+
+
+  gold
+  silver
+  platinum
+  copper
+  palladium</summary>
+
+  </entry>
 
   
   <entry>
@@ -147,35 +187,6 @@ Based on it’s class, it will likely contain certain elements....</summary>
 Then put the following line in your .bashrc (Linux) or .bash_profile (MacOS)
 
 export KUBECONFIG=${HOME}/.kube/config:$(for YAML in $(find ${HOME}/.kube/contexts -name &amp;#39;*.yaml&amp;#39;) ; do echo -n &amp;quot;:${YAML}&amp;quot;; done)</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>MongoDB Proper Kubernetes installation with Helm</title>
-    <link href="https://www.fullaware.com/posts/mongodbhelm/" rel="alternate" type="text/html" title="MongoDB Proper Kubernetes installation with Helm" />
-    <published>2024-04-17T09:59:03-04:00</published>
-  
-    <updated>2024-12-22T20:52:25-05:00</updated>
-  
-    <id>https://www.fullaware.com/posts/mongodbhelm/</id>
-    <content type="text/html" src="https://www.fullaware.com/posts/mongodbhelm/" />
-    <author>
-      <name>Full Aware</name>
-    </author>
-
-  
-    
-    <category term="DevOps" />
-    
-  
-
-  <summary>Overview
-In a previous post I created my own MongoDB deployment and installed with Kustomize.  Let’s use the “official” Bitnami Helm Chart to install MongoDB.
-
-This installs MongoDB as a standalone (NO High Availability) node.  For my purpose I’m also making it a statefulset so my backup scripts work the same regardless if the architecture is standalone or replicaset.
-
-helm install mongodb-ce o...</summary>
 
   </entry>
 
