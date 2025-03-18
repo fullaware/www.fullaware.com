@@ -42,7 +42,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Fail Fast Schema Design" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-18T17:42:55-04:00","datePublished":"2025-03-13T00:00:00-04:00","description":"Consulting, education, development","headline":"Fail Fast Schema Design","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.fullaware.com/posts/fail-fast-schema-design/"},"url":"https://www.fullaware.com/posts/fail-fast-schema-design/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-18T17:54:11-04:00","datePublished":"2025-03-13T00:00:00-04:00","description":"Consulting, education, development","headline":"Fail Fast Schema Design","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.fullaware.com/posts/fail-fast-schema-design/"},"url":"https://www.fullaware.com/posts/fail-fast-schema-design/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -701,7 +701,7 @@
 
 <time
   
-  data-ts="1742334175"
+  data-ts="1742334851"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -754,9 +754,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="255 words"
+  title="394 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
         </div>
       </div>
@@ -831,6 +831,79 @@
   <p>Data that’s queried together is stored together</p>
 </blockquote>
 
+<p>Since our objective is to mine the asteroid of its resources, we need to have an accounting of the resources.  For simplicity sake we will take the following asteroid with all but 2 of it’s potential 119 elements in the elements array:</p>
+
+<div class="language-json highlighter-rouge"><div class="code-header">
+        <span data-label-text="JSON"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+</pre></td><td class="rouge-code"><pre><span class="p">{</span><span class="w">
+  </span><span class="nl">"spkid"</span><span class="p">:</span><span class="w"> </span><span class="mi">2101955</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"full_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"101955 Bennu (1999 RQ36)"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"pdes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"101955"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bennu"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"neo"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"hazard"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"abs_magnitude"</span><span class="p">:</span><span class="w"> </span><span class="mf">20.19</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"diameter"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.492</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"albedo"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.046</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"diameter_sigma"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.02</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"orbit_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"JPL 97"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"moid"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0032228</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"C"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"elements"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hydrogen"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"mass_kg"</span><span class="p">:</span><span class="w"> </span><span class="mi">43063080</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Helium"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"mass_kg"</span><span class="p">:</span><span class="w"> </span><span class="mi">14354360</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"number"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"mass"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"$numberLong"</span><span class="p">:</span><span class="w"> </span><span class="s2">"86054387340"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"moid_days"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"$numberLong"</span><span class="p">:</span><span class="w"> </span><span class="s2">"417126801578"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></div></div>
 
   </div>
 
