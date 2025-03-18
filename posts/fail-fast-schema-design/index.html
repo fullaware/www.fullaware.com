@@ -42,7 +42,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Fail Fast Schema Design" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-18T17:20:21-04:00","datePublished":"2025-03-13T00:00:00-04:00","description":"Consulting, education, development","headline":"Fail Fast Schema Design","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.fullaware.com/posts/fail-fast-schema-design/"},"url":"https://www.fullaware.com/posts/fail-fast-schema-design/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-18T17:42:55-04:00","datePublished":"2025-03-13T00:00:00-04:00","description":"Consulting, education, development","headline":"Fail Fast Schema Design","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.fullaware.com/posts/fail-fast-schema-design/"},"url":"https://www.fullaware.com/posts/fail-fast-schema-design/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -212,9 +212,16 @@
 
   
 
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js,npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
 
 
 
@@ -588,6 +595,38 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
@@ -618,7 +657,7 @@
 
 
 
-<article class="px-1" data-toc="false">
+<article class="px-1" data-toc="true">
   <header>
     <h1 data-toc-skip>Fail Fast Schema Design</h1>
     
@@ -662,7 +701,7 @@
 
 <time
   
-  data-ts="1742332821"
+  data-ts="1742334175"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -715,7 +754,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="177 words"
+  title="255 words"
 >
   <em>1 min</em> read</span>
 
@@ -725,6 +764,28 @@
   </header>
 
   
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">Fail Fast Schema Design</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">Fail Fast Schema Design</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
 
   <div class="content">
     <p><a href="/assets/img/spoonfeed.gif" class="popup img-link  shimmer"><img src="/assets/img/spoonfeed.gif" alt="Lewis Black in &quot;Accepted&quot; 2006" loading="lazy"></a></p>
@@ -733,11 +794,12 @@
   <p>Asteroids have LOTS of value IF we can get our hands on them.</p>
 </blockquote>
 
+<h2 id="space-gold"><span class="me-2">Space Gold</span><a href="#space-gold" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Let’s be honest, nothing is going to sell the general public on asteroid mining like landing a 50,000kg chunk of “space gold” on this planet.</p>
 
-<p><a href="https://ssd.jpl.nasa.gov/tools/sbdb_query.html#!#results">1,442,115 asteroids</a> in our solarsystem but only <a href="https://eyes.nasa.gov/apps/asteroids/#/home">38,405 actively observed/tracked asteroids</a>.</p>
+<p>To achieve this we have to figure out where we are in relation to these asteroids and there are <a href="https://ssd.jpl.nasa.gov/tools/sbdb_query.html#!#results">1,442,115 asteroids</a> in our solarsystem but only <a href="https://eyes.nasa.gov/apps/asteroids/#/home">38,405 actively observed/tracked asteroids</a>.  The ones that come close enough in proximity to Earth to be a “threat” have the “Hazard” flag.</p>
 
-<p><a href="https://ssd.jpl.nasa.gov/tools/sbdb_query.html#!#results">119 elements</a> in the periodic table, 5 of those elements are currently traded commodities <a href="finance.yahoo.com">found on finance.yahoo.com</a>;</p>
+<p>For each of those asteroids there is some likelihood that many of our <a href="https://ssd.jpl.nasa.gov/tools/sbdb_query.html#!#results">119 elements</a> in the periodic table can be extracted from those asteroids, 5 of those elements are currently traded commodities <a href="finance.yahoo.com">found on finance.yahoo.com</a>;</p>
 
 <p>We are dealing in kilograms so…</p>
 
@@ -761,6 +823,14 @@
   <li>palladium = $31,315 * 50,000 = $1,565,750,000</li>
   <li>silver = $1,093 * 50,000 = $54,650,000</li>
 </ul>
+
+<h2 id="schema"><span class="me-2">Schema</span><a href="#schema" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Fundamentals of <a href="https://www.mongodb.com/developer/products/mongodb/mongodb-schema-design-best-practices/">Schema Design</a> with <a href="https://learn.mongodb.com/">MongoDB</a> can be quickly summed up with:</p>
+
+<blockquote>
+  <p>Data that’s queried together is stored together</p>
+</blockquote>
+
 
   </div>
 
@@ -885,14 +955,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/asteroidminingllms/">Asteroid Mining with LLMs</a>
+          <a href="/posts/fail-fast-schema-design/">Fail Fast Schema Design</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/fail-fast-schema-design/">Fail Fast Schema Design</a>
+          <a href="/posts/asteroidminingllms/">Asteroid Mining with LLMs</a>
         </li>
       
         
@@ -1207,6 +1277,12 @@
 
 
 
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
 
 
             
