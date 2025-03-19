@@ -4,7 +4,7 @@
   <id>https://www.fullaware.com/</id>
   <title>Full Aware</title>
   <subtitle>Driving AI innovation - consulting, education, development</subtitle>
-  <updated>2025-03-19T15:31:29-04:00</updated>
+  <updated>2025-03-19T15:32:26-04:00</updated>
   <author>
     <name>Full Aware</name>
     <uri>https://www.fullaware.com/</uri>
@@ -17,38 +17,6 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-
-  
-  <entry>
-    <title></title>
-    <link href="https://www.fullaware.com/posts/2023-02-15-mongodbtags/" rel="alternate" type="text/html" title="" />
-    <published>2025-03-19T15:31:29-04:00</published>
-  
-    <updated>2025-03-19T15:31:28-04:00</updated>
-  
-    <id>https://www.fullaware.com/posts/2023-02-15-mongodbtags/</id>
-    <content type="text/html" src="https://www.fullaware.com/posts/2023-02-15-mongodbtags/" />
-    <author>
-      <name>Full Aware</name>
-    </author>
-
-  
-    
-  
-
-  <summary>Objective
-Let’s use MongoDB to build an asteroid tagging engine that allows us to assign multiple elements to any asteroid then query based on those elements.
-
-
-Schema design
-
-
-
-Arrays allow you to assign an arbitrary number of elements to a document.  MongoDB allows you to insert, update and delete elements within arrays.
-
-A requirement of our tagging engine is we want to be able to change the...</summary>
-
-  </entry>
 
   
   <entry>
@@ -176,6 +144,39 @@ Based on it’s class, it will likely contain certain elements....</summary>
   
 
   <summary>This is a great reference for understanding the App of Apps model for deployment with ArgoCD.  How to Structure Your Argo CD Repositories Using Application Sets post by Kostis Kapelonis</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Managing multiple Kubernetes contexts</title>
+    <link href="https://www.fullaware.com/posts/k8scontexts/" rel="alternate" type="text/html" title="Managing multiple Kubernetes contexts" />
+    <published>2024-04-22T00:00:00-04:00</published>
+  
+    <updated>2024-12-22T20:52:25-05:00</updated>
+  
+    <id>https://www.fullaware.com/posts/k8scontexts/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/k8scontexts/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+    <category term="DevOps" />
+    
+  
+
+  <summary>Keep all INDIVIDUAL kubeconfig.yaml files under .kube/contexts
+
+.kube/contexts
+├── k8scluster1.yaml
+└── k8scluster2.yaml
+
+
+Then put the following line in your .bashrc (Linux) or .bash_profile (MacOS)
+
+export KUBECONFIG=${HOME}/.kube/config:$(for YAML in $(find ${HOME}/.kube/contexts -name &amp;#39;*.yaml&amp;#39;) ; do echo -n &amp;quot;:${YAML}&amp;quot;; done)</summary>
 
   </entry>
 
