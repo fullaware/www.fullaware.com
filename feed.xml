@@ -4,7 +4,7 @@
   <id>https://www.fullaware.com/</id>
   <title>Full Aware</title>
   <subtitle>Consulting, education, development</subtitle>
-  <updated>2025-03-18T17:54:12-04:00</updated>
+  <updated>2025-03-18T20:32:21-04:00</updated>
   <author>
     <name>Full Aware</name>
     <uri>https://www.fullaware.com/</uri>
@@ -12,7 +12,7 @@
   <link rel="self" type="application/atom+xml" href="https://www.fullaware.com/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="https://www.fullaware.com/"/>
-  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
   <rights> © 2025 Full Aware </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
@@ -24,7 +24,7 @@
     <link href="https://www.fullaware.com/posts/fail-fast-schema-design/" rel="alternate" type="text/html" title="Fail Fast Schema Design" />
     <published>2025-03-13T00:00:00-04:00</published>
   
-    <updated>2025-03-18T17:54:11-04:00</updated>
+    <updated>2025-03-18T20:32:19-04:00</updated>
   
     <id>https://www.fullaware.com/posts/fail-fast-schema-design/</id>
     <content type="text/html" src="https://www.fullaware.com/posts/fail-fast-schema-design/" />
@@ -44,7 +44,7 @@
 Space Gold
 Let’s be honest, nothing is going to sell the general public on asteroid mining like landing a 50,000kg chunk of “space gold” on this planet.
 
-To achieve this we have to figure out where we are in relation to these asteroids and there are 1,442,115 asteroids in our solarsystem but only 38,405 actively observed/tracked as...</summary>
+To achieve this we have to figure out which of the 1,442,115 asteroids in our solarsystem are worth sending mining equipment to hopefully hit a rock with so much readily available...</summary>
 
   </entry>
 
