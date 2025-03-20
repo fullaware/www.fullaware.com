@@ -4,7 +4,7 @@
   <id>https://www.fullaware.com/</id>
   <title>Full Aware</title>
   <subtitle>Driving AI innovation - consulting, education, development</subtitle>
-  <updated>2025-03-19T15:39:10-04:00</updated>
+  <updated>2025-03-20T11:59:33-04:00</updated>
   <author>
     <name>Full Aware</name>
     <uri>https://www.fullaware.com/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>AI Workflows</title>
+    <link href="https://www.fullaware.com/posts/aiworkflows/" rel="alternate" type="text/html" title="AI Workflows" />
+    <published>2025-03-20T00:00:00-04:00</published>
+  
+    <updated>2025-03-20T00:00:00-04:00</updated>
+  
+    <id>https://www.fullaware.com/posts/aiworkflows/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/aiworkflows/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+  
+
+  <summary>Today we use Retrieval Augmented Generation as an intermediary between the User and the information they are looking for.  This design works great for as a Service offerings like OpenAI, Grok, Deepseek, etc.  What requirements are needed when that information is private and therefore cannot be trusted with organizations who capitalize on the information that the user is requesting?</summary>
+
+  </entry>
 
   
   <entry>
@@ -54,7 +78,7 @@ To achieve this we have to figure out which of the 1,442,115 asteroids in our so
     <link href="https://www.fullaware.com/posts/aigoldenrule/" rel="alternate" type="text/html" title="AI and the Golden Rule" />
     <published>2025-03-10T00:00:00-04:00</published>
   
-    <updated>2025-03-12T16:20:18-04:00</updated>
+    <updated>2025-03-20T11:59:31-04:00</updated>
   
     <id>https://www.fullaware.com/posts/aigoldenrule/</id>
     <content type="text/html" src="https://www.fullaware.com/posts/aigoldenrule/" />
@@ -97,7 +121,7 @@ With that int...</summary>
     <link href="https://www.fullaware.com/posts/asteroidminingllms/" rel="alternate" type="text/html" title="Asteroid Mining with LLMs" />
     <published>2025-03-09T00:00:00-05:00</published>
   
-    <updated>2025-03-19T15:35:20-04:00</updated>
+    <updated>2025-03-20T11:59:31-04:00</updated>
   
     <id>https://www.fullaware.com/posts/asteroidminingllms/</id>
     <content type="text/html" src="https://www.fullaware.com/posts/asteroidminingllms/" />
@@ -125,35 +149,23 @@ Based on it’s class, it will likely contain certain elements....</summary>
 
   
   <entry>
-    <title>Tagging Asteroids with MongoDB</title>
-    <link href="https://www.fullaware.com/posts/mongodbtags/" rel="alternate" type="text/html" title="Tagging Asteroids with MongoDB" />
-    <published>2023-02-15T00:00:00-05:00</published>
+    <title>Complexity kills</title>
+    <link href="https://www.fullaware.com/posts/complexitykills/" rel="alternate" type="text/html" title="Complexity kills" />
+    <published>2023-12-25T00:00:00-05:00</published>
   
-    <updated>2025-03-19T15:32:25-04:00</updated>
+    <updated>2025-03-20T11:59:31-04:00</updated>
   
-    <id>https://www.fullaware.com/posts/mongodbtags/</id>
-    <content type="text/html" src="https://www.fullaware.com/posts/mongodbtags/" />
+    <id>https://www.fullaware.com/posts/complexitykills/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/complexitykills/" />
     <author>
       <name>Full Aware</name>
     </author>
 
   
     
-    <category term="Development" />
-    
   
 
-  <summary>Objective
-Let’s use MongoDB to build an asteroid tagging engine that allows us to assign multiple elements to any asteroid then query based on those elements.
-
-
-Schema design
-
-
-
-Arrays allow you to assign an arbitrary number of elements to a document.  MongoDB allows you to insert, update and delete elements within arrays.
-
-A requirement of our tagging engine is we want to be able to change the...</summary>
+  <summary>Before designing your next microservices architecture, consider this brilliant post by Andrei Taranchenko Death by a Thousand Microservices</summary>
 
   </entry>
 

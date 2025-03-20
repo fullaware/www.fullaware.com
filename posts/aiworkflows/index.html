@@ -30,23 +30,23 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Tags" />
+<meta property="og:title" content="AI Workflows" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Driving AI innovation - consulting, education, development" />
-<meta property="og:description" content="Driving AI innovation - consulting, education, development" />
-<link rel="canonical" href="https://www.fullaware.com/tags/" />
-<meta property="og:url" content="https://www.fullaware.com/tags/" />
+<meta name="description" content="Today we use Retrieval Augmented Generation as an intermediary between the User and the information they are looking for. This design works great for as a Service offerings like OpenAI, Grok, Deepseek, etc. What requirements are needed when that information is private and therefore cannot be trusted with organizations who capitalize on the information that the user is requesting?" />
+<meta property="og:description" content="Today we use Retrieval Augmented Generation as an intermediary between the User and the information they are looking for. This design works great for as a Service offerings like OpenAI, Grok, Deepseek, etc. What requirements are needed when that information is private and therefore cannot be trusted with organizations who capitalize on the information that the user is requesting?" />
+<link rel="canonical" href="https://www.fullaware.com/posts/aiworkflows/" />
+<meta property="og:url" content="https://www.fullaware.com/posts/aiworkflows/" />
 <meta property="og:site_name" content="Full Aware" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-03-20T11:59:33-04:00" />
+<meta property="article:published_time" content="2025-03-20T00:00:00-04:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Tags" />
+<meta property="twitter:title" content="AI Workflows" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-20T11:59:33-04:00","datePublished":"2025-03-20T11:59:33-04:00","description":"Driving AI innovation - consulting, education, development","headline":"Tags","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.fullaware.com/tags/"},"url":"https://www.fullaware.com/tags/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-20T00:00:00-04:00","datePublished":"2025-03-20T00:00:00-04:00","description":"Today we use Retrieval Augmented Generation as an intermediary between the User and the information they are looking for. This design works great for as a Service offerings like OpenAI, Grok, Deepseek, etc. What requirements are needed when that information is private and therefore cannot be trusted with organizations who capitalize on the information that the user is requesting?","headline":"AI Workflows","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.fullaware.com/posts/aiworkflows/"},"url":"https://www.fullaware.com/posts/aiworkflows/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Tags | Full Aware
+  <title>AI Workflows | Full Aware
   </title>
 
   <!--
@@ -110,9 +110,16 @@
   <!-- 3rd-party Dependencies -->
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.32.2/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
   
 
   <!-- Scripts -->
@@ -128,6 +135,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -149,9 +163,58 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js"></script>
 
 
 
@@ -159,11 +222,15 @@
 
 
 
-<script defer src="/assets/js/dist/commons.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
 <!-- Pageviews -->
+
+  
+
+  
 
 
 
@@ -207,7 +274,7 @@
         </li>
         <!-- .nav-item -->
       
-        <li class="nav-item active">
+        <li class="nav-item">
           <a href="/tags/" class="nav-link">
             <i class="fa-fw fas fa-tags"></i>
             
@@ -362,8 +429,10 @@
           
         
           
+        
+          
             
-              <span>Tags</span>
+              <span>AI Workflows</span>
             
 
           
@@ -377,7 +446,7 @@
     </button>
 
     <div id="topbar-title">
-      Tags
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -403,60 +472,336 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
 
 
 
-<article class="px-1">
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+  
+  
+
   
     
+      
+      
     
-    <h1 class="dynamic-title">
-      Tags
-    </h1>
-    <div class="content">
-      <div id="tags" class="d-flex flex-wrap mx-xl-2">
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
   
   
 
   
 
   
-    <div>
-      <a class="tag" href="/tags/ai/">
-        AI<span class="text-muted">3</span>
-      </a>
-    </div>
   
-    <div>
-      <a class="tag" href="/tags/asteroids/">
-        asteroids<span class="text-muted">3</span>
-      </a>
-    </div>
+
   
-    <div>
-      <a class="tag" href="/tags/k8s/">
-        k8s<span class="text-muted">1</span>
-      </a>
-    </div>
+
   
-    <div>
-      <a class="tag" href="/tags/llm/">
-        llm<span class="text-muted">3</span>
-      </a>
-    </div>
   
-    <div>
-      <a class="tag" href="/tags/mongodb/">
-        mongodb<span class="text-muted">3</span>
-      </a>
-    </div>
+
   
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
+
+
+
+
+
+
+
+
+
+<article class="px-1" data-toc="false">
+  <header>
+    <h1 data-toc-skip>AI Workflows</h1>
+    
+
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1742443200"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Mar 20, 2025
+</time>
+
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              <a href="https://github.com/fullaware">Full Aware</a>
+            
+          </em>
+        </span>
+
+        <div>
+          <!-- pageviews -->
+          
+
+          <!-- read time -->
+          <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="59 words"
+>
+  <em>1 min</em> read</span>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+
+  <div class="content">
+    <p><a href="/assets/img/fullaware-ai-workflow.png" class="popup img-link  shimmer"><img src="/assets/img/fullaware-ai-workflow.png" alt="" loading="lazy"></a>
+<!--more-->
+Today we use <a href="">Retrieval Augmented Generation</a> as an intermediary between the User and the information they are looking for.  This design works great for as a Service offerings like OpenAI, Grok, Deepseek, etc.  What requirements are needed when that information is private and therefore cannot be trusted with organizations who capitalize on the information that the user is requesting?</p>
+
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/development/">Development</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/llm/"
+            class="post-tag no-text-decoration"
+          >llm</a>
+        
+          <a
+            href="/tags/ai/"
+            class="post-tag no-text-decoration"
+          >AI</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.fullaware.com%2Fposts%2Faiworkflows%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin" aria-label="Linkedin">
+        <i class="fa-fw fab fa-linkedin"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.fullaware.com%2Fposts%2Faiworkflows%2F&title=AI%20Workflows%20-%20Full%20Aware" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Reddit" aria-label="Reddit">
+        <i class="fa-fw fa-brands fa-square-reddit"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
 
     </div>
-  
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -674,12 +1019,240 @@
             </div>
 
             
+              
+              
+
+
+
+
+
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/aigoldenrule/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1741579200"
+  data-df="ll"
+  
+>
+  Mar 10, 2025
+</time>
+
+              <h4 class="pt-0 my-2">AI and the Golden Rule</h4>
+              <div class="text-muted">
+                <p>Wisdom can come from anywhere as I was reminded by my 11 yr old daughter to always be nice to the AI in case it takes over the world…
+
+
+
+She recommended that we always;
+
+  Compliment
+  Encourage
+  ...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/asteroidminingllms/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1741496400"
+  data-df="ll"
+  
+>
+  Mar  9, 2025
+</time>
+
+              <h4 class="pt-0 my-2">Asteroid Mining with LLMs</h4>
+              <div class="text-muted">
+                <p>Asteroid mining is hard, it is harder if you cannot find what you are looking for. We are going to use low power hardware (M2 Pro 16GB 512GB) to run a Large Language Model, IBM granite3.1-dense:8b,...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/fail-fast-schema-design/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1741838400"
+  data-df="ll"
+  
+>
+  Mar 13, 2025
+</time>
+
+              <h4 class="pt-0 my-2">Fail Fast Schema Design</h4>
+              <div class="text-muted">
+                <p>Asteroids have LOTS of value IF we can get our hands on them.
+
+
+Space Gold
+Let’s be honest, nothing is going to sell the general public on asteroid mining like landing a 50,000kg chunk of “space go...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/fail-fast-schema-design/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Fail Fast Schema Design</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
             
 
             <!-- The Footer -->
@@ -919,6 +1492,11 @@
     
 
     <!-- Embedded scripts -->
+
+    
+      
+      <!-- The comments switcher -->
+
 
     
 
