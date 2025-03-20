@@ -4,7 +4,7 @@
   <id>https://www.fullaware.com/</id>
   <title>Full Aware</title>
   <subtitle>Driving AI innovation - consulting, education, development</subtitle>
-  <updated>2025-03-20T11:59:33-04:00</updated>
+  <updated>2025-03-20T16:57:32-04:00</updated>
   <author>
     <name>Full Aware</name>
     <uri>https://www.fullaware.com/</uri>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>AI Workflows</title>
-    <link href="https://www.fullaware.com/posts/aiworkflows/" rel="alternate" type="text/html" title="AI Workflows" />
+    <title>AI Data Sovereignty</title>
+    <link href="https://www.fullaware.com/posts/aidatasovereignty/" rel="alternate" type="text/html" title="AI Data Sovereignty" />
     <published>2025-03-20T00:00:00-04:00</published>
   
     <updated>2025-03-20T00:00:00-04:00</updated>
   
-    <id>https://www.fullaware.com/posts/aiworkflows/</id>
-    <content type="text/html" src="https://www.fullaware.com/posts/aiworkflows/" />
+    <id>https://www.fullaware.com/posts/aidatasovereignty/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/aidatasovereignty/" />
     <author>
       <name>Full Aware</name>
     </author>
@@ -38,7 +38,7 @@
     
   
 
-  <summary>Today we use Retrieval Augmented Generation as an intermediary between the User and the information they are looking for.  This design works great for as a Service offerings like OpenAI, Grok, Deepseek, etc.  What requirements are needed when that information is private and therefore cannot be trusted with organizations who capitalize on the information that the user is requesting?</summary>
+  <summary>Today we use Retrieval Augmented Generation as an intermediary between the User and the information they are looking for.  This design works great for AI as a Service offerings like OpenAI, Grok, Deepseek, etc. These companies benefit from your interactions as well as the AI’s responses to tune the AI to be more effective for future questions of a similar type.  Much like Google caches search r...</summary>
 
   </entry>
 
