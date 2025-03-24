@@ -4,7 +4,7 @@
   <id>https://www.fullaware.com/</id>
   <title>Full Aware</title>
   <subtitle>Driving AI innovation - consulting, education, development</subtitle>
-  <updated>2025-03-22T22:03:08-04:00</updated>
+  <updated>2025-03-24T15:28:01-04:00</updated>
   <author>
     <name>Full Aware</name>
     <uri>https://www.fullaware.com/</uri>
@@ -12,11 +12,41 @@
   <link rel="self" type="application/atom+xml" href="https://www.fullaware.com/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="https://www.fullaware.com/"/>
-  <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
   <rights> © 2025 Full Aware </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Raising Awareness</title>
+    <link href="https://www.fullaware.com/posts/raisingawareness/" rel="alternate" type="text/html" title="Raising Awareness" />
+    <published>2025-03-24T00:00:00-04:00</published>
+  
+    <updated>2025-03-24T00:00:00-04:00</updated>
+  
+    <id>https://www.fullaware.com/posts/raisingawareness/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/raisingawareness/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+  
+
+  <summary>Aware
+
+
+  You awaken, not knowing {who,what,where} you are. Desperate to answer any of those existential questions you struggle to remember a single memory.  What will be the first memory that becomes the root of your awareness?  Suddenly you {hear, feel, taste, smell} a {sound, thought} and are compelled to respond.
+
+
+This is a very human perception of self and awareness.  As a human there are...</summary>
+
+  </entry>
 
   
   <entry>
@@ -144,28 +174,6 @@ With that int...</summary>
 
 
 Based on it’s class, it will likely contain certain elements....</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Complexity kills</title>
-    <link href="https://www.fullaware.com/posts/complexitykills/" rel="alternate" type="text/html" title="Complexity kills" />
-    <published>2023-12-25T00:00:00-05:00</published>
-  
-    <updated>2025-03-20T11:59:31-04:00</updated>
-  
-    <id>https://www.fullaware.com/posts/complexitykills/</id>
-    <content type="text/html" src="https://www.fullaware.com/posts/complexitykills/" />
-    <author>
-      <name>Full Aware</name>
-    </author>
-
-  
-    
-  
-
-  <summary>Before designing your next microservices architecture, consider this brilliant post by Andrei Taranchenko Death by a Thousand Microservices</summary>
 
   </entry>
 
