@@ -4,7 +4,7 @@
   <id>https://www.fullaware.com/</id>
   <title>Full Aware</title>
   <subtitle>Driving AI innovation - consulting, education, development</subtitle>
-  <updated>2025-11-24T14:50:45-05:00</updated>
+  <updated>2026-06-21T20:28:04-04:00</updated>
   <author>
     <name>Full Aware</name>
     <uri>https://www.fullaware.com/</uri>
@@ -13,10 +13,44 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="https://www.fullaware.com/"/>
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
-  <rights> © 2025 Full Aware </rights>
+  <rights> © 2026 Full Aware </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>AI Management Loop</title>
+    <link href="https://www.fullaware.com/posts/ai-management-loop/" rel="alternate" type="text/html" title="AI Management Loop" />
+    <published>2026-06-21T00:00:00-04:00</published>
+  
+    <updated>2026-06-21T00:00:00-04:00</updated>
+  
+    <id>https://www.fullaware.com/posts/ai-management-loop/</id>
+    <content type="text/html" src="https://www.fullaware.com/posts/ai-management-loop/" />
+    <author>
+      <name>Full Aware</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+  
+
+  <summary>As soon as I commit this to my repo it will trigger a sequence of events that would have taken me days to get right even with AI help.
+
+I’m leaving my entire codebase to the management of AI.
+
+It has access to all the resources it needs to loop until it figures things out.
+
+It knows it has limited context so it spawns sub-loops with their own context.
+
+Shouldn’t be long now.
+
+Notify me as tasks...</summary>
+
+  </entry>
 
   
   <entry>
@@ -142,38 +176,6 @@ Why?
 None of us know what that end goal is right now and it’s fascinating and terrifying.
 
 With that int...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Asteroid Mining with LLMs</title>
-    <link href="https://www.fullaware.com/posts/asteroidminingllms/" rel="alternate" type="text/html" title="Asteroid Mining with LLMs" />
-    <published>2025-03-09T00:00:00-05:00</published>
-  
-    <updated>2025-10-21T08:36:41-04:00</updated>
-  
-    <id>https://www.fullaware.com/posts/asteroidminingllms/</id>
-    <content type="text/html" src="https://www.fullaware.com/posts/asteroidminingllms/" />
-    <author>
-      <name>Full Aware</name>
-    </author>
-
-  
-    
-    <category term="Development" />
-    
-  
-
-  <summary>Asteroid mining is hard, it is harder if you cannot find what you are looking for. We are going to use low power hardware (M2 Pro 16GB 512GB) to run a Large Language Model, IBM granite3.1-dense:8b, via Ollama to classify asteroids and elements so that we can easily answer the following question.
-
-
-
-
-  How much is an asteroid worth?
-
-
-Based on it’s class, it will likely contain certain elements....</summary>
 
   </entry>
 
