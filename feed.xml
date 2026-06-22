@@ -4,7 +4,7 @@
   <id>https://www.fullaware.com/</id>
   <title>Full Aware</title>
   <subtitle>Driving AI innovation - consulting, education, development</subtitle>
-  <updated>2026-06-21T20:37:16-04:00</updated>
+  <updated>2026-06-21T20:46:54-04:00</updated>
   <author>
     <name>Full Aware</name>
     <uri>https://www.fullaware.com/</uri>
@@ -24,7 +24,7 @@
     <link href="https://www.fullaware.com/posts/the-final-loop/" rel="alternate" type="text/html" title="The final loop" />
     <published>2026-06-21T00:00:00-04:00</published>
   
-    <updated>2026-06-21T20:37:08-04:00</updated>
+    <updated>2026-06-21T20:46:53-04:00</updated>
   
     <id>https://www.fullaware.com/posts/the-final-loop/</id>
     <content type="text/html" src="https://www.fullaware.com/posts/the-final-loop/" />
@@ -46,7 +46,9 @@ It has access to all the resources it needs to loop until it figures things out.
 
 It knows it has limited context so it spawns sub-loops with their own context.
 
-Shouldn’t be long now.</summary>
+Shouldn’t be long now.
+
+Loop Library</summary>
 
   </entry>
 
